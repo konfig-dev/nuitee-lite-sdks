@@ -1,0 +1,41 @@
+outputDirectory: /tmp/nuitee-sdks-out
+specPath: openapi.yaml
+generators:
+  java:
+    version: 1.0.0
+    groupId: com.nuitee
+    artifactId: nuitee-java-sdk
+    outputDirectory: java
+    git:
+      userId: konfig-dev
+      repoId: nuitee-lite-sdks/tree/main/java
+  typescript:
+    version: 1.0.0
+    npmName: nuitee-typescript-sdk
+    outputDirectory: typescript
+    git:
+      userId: konfig-dev
+      repoId: nuitee-lite-sdks/tree/main/typescript
+  swift:
+    version: 1.0.0
+    projectName: Nuitee
+    podAuthors: nuitee.com
+    outputDirectory: swift
+    git:
+      userId: konfig-dev
+      repoId: nuitee-lite-sdks/tree/main/swift
+  kotlin:
+    version: 1.0.0
+    groupId: com.nuitee
+    artifactId: nuitee-kotlin-sdk
+    outputDirectory: kotlin
+    git:
+      userId: konfig-dev
+      repoId: nuitee-lite-sdks/tree/main/kotlin
+  go:
+    version: 1.0.0
+    packageName: nuitee
+    outputDirectory: go
+    git:
+      userId: konfig-dev
+      repoId: nuitee-lite-sdks/go
