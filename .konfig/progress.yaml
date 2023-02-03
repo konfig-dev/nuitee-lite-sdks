@@ -1,4 +1,5 @@
 ignoreObjectsWithNoProperties: false
+ignorePotentialIncorrectType: true
 operationIds:
   /hotels:
     get: Search_getHotels
@@ -152,4 +153,3 @@ responseSchemaNames:
       '200':
         application/json: ListIataCodesResponse
 responseDescriptions: {}
-ignorePotentialIncorrectType: true
