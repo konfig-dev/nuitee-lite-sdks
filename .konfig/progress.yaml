@@ -1,0 +1,155 @@
+ignoreObjectsWithNoProperties: false
+operationIds:
+  /hotels:
+    get: Search_getHotels
+  /hotels/rates:
+    get: Search_getHotelRates
+  /rates/prebook:
+    post: Book_prebook
+  /rates/book:
+    post: Book_book
+  /bookings/{bookingId}:
+    get: Bookingmanagement_retrieve
+    put: bookingmanagement_cancel
+  /data/hotels:
+    get: Staticdata_listHotels
+  /data/cities:
+    get: Staticdata_listCities
+  /data/currencies:
+    get: Staticdata_listCurrencies
+  /bookings:
+    get: Bookingmanagement_listBookings
+  /data/countries:
+    get: Staticdata_listCountries
+  /data/iataCodes:
+    get: Staticdata_listIataCodes
+renameTags: {}
+operationTags: {}
+examples: {}
+securityParameters:
+  checkin:
+    query: false
+  checkout:
+    query: false
+  country:
+    query: false
+  latitude:
+    query: false
+  longitude:
+    query: false
+  distance:
+    query: false
+  adults:
+    query: false
+  children:
+    query: false
+  currency:
+    query: false
+  guestNationality:
+    query: false
+  travelerId:
+    query: false
+  hotelIds:
+    query: false
+  sessionId:
+    query: false
+  hotelName:
+    query: false
+  cityName:
+    query: false
+  countryCode:
+    query: false
+  limit:
+    query: false
+  offset:
+    query: false
+  iataCode:
+    query: false
+  guestId:
+    query: false
+examples_2: {}
+requestSchemaNames:
+  /rates/prebook:
+    post:
+      application/json: PrebookRequest
+  /rates/book:
+    post:
+      application/json: BookRequest
+responseSchemaNames:
+  /hotels:
+    get:
+      '200':
+        application/json: GetHotelsResponse
+      '400':
+        application/json: GetHotels400Response
+      '401':
+        application/json: GetHotels401Response
+  /hotels/rates:
+    get:
+      '200':
+        application/json: GetHotelRatesResponse
+      '400':
+        application/json: GetHotelRates400Response
+      '401':
+        application/json: GetHotelRates401Response
+  /rates/prebook:
+    post:
+      '200':
+        application/json: PrebookResponse
+      '401':
+        application/json: Prebook401Response
+  /rates/book:
+    post:
+      '200':
+        application/json: BookResponse
+      '400':
+        application/json: Book400Response
+      '401':
+        application/json: Book401Response
+      '500':
+        application/json: Book500Response
+  /bookings/{bookingId}:
+    get:
+      '200':
+        application/json: RetrieveResponse
+      '400':
+        application/json: Retrieve400Response
+    put:
+      '200':
+        application/json: CancelResponse
+      '400':
+        application/json: Cancel400Response
+      '401':
+        application/json: Cancel401Response
+      '500':
+        application/json: Cancel500Response
+  /data/hotels:
+    get:
+      '200':
+        application/json: ListHotelsResponse
+      '400':
+        application/json: ListHotels400Response
+      '401':
+        application/json: ListHotels401Response
+  /data/cities:
+    get:
+      '200':
+        application/json: ListCitiesResponse
+  /data/currencies:
+    get:
+      '200':
+        application/json: ListCurrenciesResponse
+  /bookings:
+    get:
+      '200':
+        application/json: ListBookingsResponse
+  /data/countries:
+    get:
+      '200':
+        application/json: ListCountriesResponse
+  /data/iataCodes:
+    get:
+      '200':
+        application/json: ListIataCodesResponse
+responseDescriptions: {}
+ignorePotentialIncorrectType: true
