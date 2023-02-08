@@ -29,5 +29,6 @@ let package = Package(
             dependencies: ["AnyCodable", ],
             path: "Nuitee"
         ),
+        .testTarget(name: "Tests", dependencies: ["Nuitee"], path: "Tests")
     ]
 )
