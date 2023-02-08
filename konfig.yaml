@@ -2,6 +2,7 @@ outputDirectory: /tmp/nuitee-sdks-out
 specPath: openapi.yaml
 generators:
   java:
+    disabled: true
     version: 1.0.0
     groupId: com.nuitee
     artifactId: nuitee-java-sdk
@@ -10,6 +11,7 @@ generators:
       userId: konfig-dev
       repoId: nuitee-lite-sdks/tree/main/java
   typescript:
+    disabled: true
     version: 1.0.0
     npmName: nuitee-typescript-sdk
     outputDirectory: typescript
@@ -17,6 +19,7 @@ generators:
       userId: konfig-dev
       repoId: nuitee-lite-sdks/tree/main/typescript
   swift:
+    disabled: true
     version: 1.0.0
     projectName: Nuitee
     podAuthors: nuitee.com
@@ -33,6 +36,7 @@ generators:
       userId: konfig-dev
       repoId: nuitee-lite-sdks/tree/main/kotlin
   go:
+    disabled: true
     version: 1.0.0
     packageName: nuitee
     outputDirectory: go
