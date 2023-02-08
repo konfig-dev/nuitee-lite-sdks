@@ -4,7 +4,7 @@ generators:
   java:
     disabled: true
     version: 1.0.0
-    groupId: com.nuitee
+    groupId: com.konfigthis.nuitee
     artifactId: nuitee-java-sdk
     outputDirectory: java
     git:
@@ -29,7 +29,7 @@ generators:
       repoId: nuitee-lite-sdks/tree/main/swift
   kotlin:
     version: 1.0.0
-    groupId: com.nuitee
+    groupId: com.konfigthis.nuitee
     artifactId: nuitee-kotlin-sdk
     outputDirectory: kotlin
     git:
