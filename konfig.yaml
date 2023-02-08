@@ -19,7 +19,6 @@ generators:
       userId: konfig-dev
       repoId: nuitee-lite-sdks/tree/main/typescript
   swift:
-    disabled: true
     version: 1.0.0
     projectName: Nuitee
     podAuthors: nuitee.com
@@ -28,6 +27,7 @@ generators:
       userId: konfig-dev
       repoId: nuitee-lite-sdks/tree/main/swift
   kotlin:
+    disabled: true
     version: 1.0.0
     groupId: com.konfigthis.nuitee
     artifactId: nuitee-kotlin-sdk
