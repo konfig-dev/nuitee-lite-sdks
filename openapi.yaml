@@ -19334,8 +19334,13 @@ components:
     GetHotels401Response:
       type: object
       properties:
-        '':
-          type: string
+        error:
+          type: object
+          properties: 
+            code:
+              type: number
+            message:
+              type: string
     GetHotelRatesResponse:
       type: object
       x-examples:
