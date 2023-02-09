@@ -24,6 +24,15 @@ paths:
         date range and in response receive the best rate available for each of
         the hotel ID's. The limit is set to 200 hotels
       parameters:
+        - description: >-
+            hotel ids separated by comma, max number of hotel ids is 10, example
+            (2345,557,56)
+          schema:
+            type: string
+            example: 2345,557,565,4239
+          in: query
+          name: hotelIds
+          required: true
         - schema:
             description: start date example 2023-01-15
             type: string
