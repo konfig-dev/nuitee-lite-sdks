@@ -1,1 +1,4 @@
-Tests/APITest.swift
+Tests/BookAPITest.swift
+Tests/BookingManagementAPITest.swift
+Tests/SearchAPITest.swift
+Tests/StaticDataAPITest.swift
