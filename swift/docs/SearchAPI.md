@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 # **getHotels**
 ```swift
-    open class func getHotels(checkin: Date, checkout: Date, country: String, adults: Int, currency: String, guestNationality: String, latitude: Double? = nil, longitude: Double? = nil, distance: Int? = nil, children: String? = nil, travelerId: String? = nil, completion: @escaping (_ data: GetHotelsResponse?, _ error: Error?) -> Void)
+    open class func getHotels(hotelIds: String, checkin: Date, checkout: Date, country: String, adults: Int, currency: String, guestNationality: String, latitude: Double? = nil, longitude: Double? = nil, distance: Int? = nil, children: String? = nil, travelerId: String? = nil, completion: @escaping (_ data: GetHotelsResponse?, _ error: Error?) -> Void)
 ```
 
 Hotel minimum rate availability
@@ -86,6 +86,7 @@ This endpoint allows you to send a list of hotel ID's for a specific date range 
 ```swift
 import Nuitee
 
+let hotelIds = "hotelIds_example" // String | hotel ids separated by comma, max number of hotel ids is 10, example (2345,557,56)
 let checkin = Date() // Date | 
 let checkout = Date() // Date | 
 let country = "country_example" // String | 
@@ -99,7 +100,7 @@ let children = "children_example" // String |  (optional)
 let travelerId = "travelerId_example" // String |  (optional)
 
 // Hotel minimum rate availability
-SearchAPI.getHotels(checkin: checkin, checkout: checkout, country: country, adults: adults, currency: currency, guestNationality: guestNationality, latitude: latitude, longitude: longitude, distance: distance, children: children, travelerId: travelerId) { (response, error) in
+SearchAPI.getHotels(hotelIds: hotelIds, checkin: checkin, checkout: checkout, country: country, adults: adults, currency: currency, guestNationality: guestNationality, latitude: latitude, longitude: longitude, distance: distance, children: children, travelerId: travelerId) { (response, error) in
     guard error == nil else {
         print(error)
         return
@@ -115,6 +116,7 @@ SearchAPI.getHotels(checkin: checkin, checkout: checkout, country: country, adul
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **hotelIds** | **String** | hotel ids separated by comma, max number of hotel ids is 10, example (2345,557,56) | 
  **checkin** | **Date** |  | 
  **checkout** | **Date** |  | 
  **country** | **String** |  | 

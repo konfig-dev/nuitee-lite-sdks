@@ -89,6 +89,7 @@ open class SearchAPI {
     /**
      Hotel minimum rate availability
      
+     - parameter hotelIds: (query) hotel ids separated by comma, max number of hotel ids is 10, example (2345,557,56) 
      - parameter checkin: (query)  
      - parameter checkout: (query)  
      - parameter country: (query)  
@@ -104,8 +105,8 @@ open class SearchAPI {
      - parameter completion: completion handler to receive the data and the error objects
      */
     @discardableResult
-    open class func getHotels(checkin: Date, checkout: Date, country: String, adults: Int, currency: String, guestNationality: String, latitude: Double? = nil, longitude: Double? = nil, distance: Int? = nil, children: String? = nil, travelerId: String? = nil, apiResponseQueue: DispatchQueue = NuiteeAPI.apiResponseQueue, completion: @escaping ((_ data: GetHotelsResponse?, _ error: Error?) -> Void)) -> RequestTask {
-        return getHotelsWithRequestBuilder(checkin: checkin, checkout: checkout, country: country, adults: adults, currency: currency, guestNationality: guestNationality, latitude: latitude, longitude: longitude, distance: distance, children: children, travelerId: travelerId).execute(apiResponseQueue) { result in
+    open class func getHotels(hotelIds: String, checkin: Date, checkout: Date, country: String, adults: Int, currency: String, guestNationality: String, latitude: Double? = nil, longitude: Double? = nil, distance: Int? = nil, children: String? = nil, travelerId: String? = nil, apiResponseQueue: DispatchQueue = NuiteeAPI.apiResponseQueue, completion: @escaping ((_ data: GetHotelsResponse?, _ error: Error?) -> Void)) -> RequestTask {
+        return getHotelsWithRequestBuilder(hotelIds: hotelIds, checkin: checkin, checkout: checkout, country: country, adults: adults, currency: currency, guestNationality: guestNationality, latitude: latitude, longitude: longitude, distance: distance, children: children, travelerId: travelerId).execute(apiResponseQueue) { result in
             switch result {
             case let .success(response):
                 completion(response.body, nil)
@@ -122,6 +123,7 @@ open class SearchAPI {
      - API Key:
        - type: apiKey X-API-Key 
        - name: ApiKeyAuth
+     - parameter hotelIds: (query) hotel ids separated by comma, max number of hotel ids is 10, example (2345,557,56) 
      - parameter checkin: (query)  
      - parameter checkout: (query)  
      - parameter country: (query)  
@@ -135,13 +137,14 @@ open class SearchAPI {
      - parameter travelerId: (query)  (optional)
      - returns: RequestBuilder<GetHotelsResponse> 
      */
-    open class func getHotelsWithRequestBuilder(checkin: Date, checkout: Date, country: String, adults: Int, currency: String, guestNationality: String, latitude: Double? = nil, longitude: Double? = nil, distance: Int? = nil, children: String? = nil, travelerId: String? = nil) -> RequestBuilder<GetHotelsResponse> {
+    open class func getHotelsWithRequestBuilder(hotelIds: String, checkin: Date, checkout: Date, country: String, adults: Int, currency: String, guestNationality: String, latitude: Double? = nil, longitude: Double? = nil, distance: Int? = nil, children: String? = nil, travelerId: String? = nil) -> RequestBuilder<GetHotelsResponse> {
         let localVariablePath = "/hotels"
         let localVariableURLString = NuiteeAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
 
         var localVariableUrlComponents = URLComponents(string: localVariableURLString)
         localVariableUrlComponents?.queryItems = APIHelper.mapValuesToQueryItems([
+            "hotelIds": (wrappedValue: hotelIds.encodeToJSON(), isExplode: true),
             "checkin": (wrappedValue: checkin.encodeToJSON(), isExplode: true),
             "checkout": (wrappedValue: checkout.encodeToJSON(), isExplode: true),
             "country": (wrappedValue: country.encodeToJSON(), isExplode: true),
