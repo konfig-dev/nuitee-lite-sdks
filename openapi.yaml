@@ -248,6 +248,7 @@ paths:
           in: query
           schema:
             type: string
+            format: date
           example: '2023-01-15'
           required: true
         - description: end date yyyy-mm-dd format
@@ -255,6 +256,7 @@ paths:
           in: query
           schema:
             type: string
+            format: date
           example: '2023-01-16'
           required: true
         - description: adults number
