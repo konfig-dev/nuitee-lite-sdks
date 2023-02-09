@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 # **getHotelRates**
 ```swift
-    open class func getHotelRates(hotelIds: String, checkin: String, checkout: String, adults: Int, guestNationality: String, currency: String, children: String? = nil, sessionId: String? = nil, travelerId: String? = nil, completion: @escaping (_ data: GetHotelRatesResponse?, _ error: Error?) -> Void)
+    open class func getHotelRates(hotelIds: String, checkin: Date, checkout: Date, adults: Int, guestNationality: String, currency: String, children: String? = nil, sessionId: String? = nil, travelerId: String? = nil, completion: @escaping (_ data: GetHotelRatesResponse?, _ error: Error?) -> Void)
 ```
 
 Hotel full rate availability
@@ -22,8 +22,8 @@ This endpoint allows you to send a hotel ID with a specific date range and in re
 import Nuitee
 
 let hotelIds = "hotelIds_example" // String | hotel ids separated by comma, max number of hotel ids is 10, example (2345,557,56)
-let checkin = "checkin_example" // String | start date yyyy-mm-dd format
-let checkout = "checkout_example" // String | end date yyyy-mm-dd format
+let checkin = Date() // Date | start date yyyy-mm-dd format
+let checkout = Date() // Date | end date yyyy-mm-dd format
 let adults = 987 // Int | adults number
 let guestNationality = "guestNationality_example" // String | guest nationality country code iso-2 example (US)
 let currency = "currency_example" // String | currency code example (USD)
@@ -49,8 +49,8 @@ SearchAPI.getHotelRates(hotelIds: hotelIds, checkin: checkin, checkout: checkout
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **hotelIds** | **String** | hotel ids separated by comma, max number of hotel ids is 10, example (2345,557,56) | 
- **checkin** | **String** | start date yyyy-mm-dd format | 
- **checkout** | **String** | end date yyyy-mm-dd format | 
+ **checkin** | **Date** | start date yyyy-mm-dd format | 
+ **checkout** | **Date** | end date yyyy-mm-dd format | 
  **adults** | **Int** | adults number | 
  **guestNationality** | **String** | guest nationality country code iso-2 example (US) | 
  **currency** | **String** | currency code example (USD) | 

@@ -28,7 +28,7 @@ open class SearchAPI {
      - parameter completion: completion handler to receive the data and the error objects
      */
     @discardableResult
-    open class func getHotelRates(hotelIds: String, checkin: String, checkout: String, adults: Int, guestNationality: String, currency: String, children: String? = nil, sessionId: String? = nil, travelerId: String? = nil, apiResponseQueue: DispatchQueue = NuiteeAPI.apiResponseQueue, completion: @escaping ((_ data: GetHotelRatesResponse?, _ error: Error?) -> Void)) -> RequestTask {
+    open class func getHotelRates(hotelIds: String, checkin: Date, checkout: Date, adults: Int, guestNationality: String, currency: String, children: String? = nil, sessionId: String? = nil, travelerId: String? = nil, apiResponseQueue: DispatchQueue = NuiteeAPI.apiResponseQueue, completion: @escaping ((_ data: GetHotelRatesResponse?, _ error: Error?) -> Void)) -> RequestTask {
         return getHotelRatesWithRequestBuilder(hotelIds: hotelIds, checkin: checkin, checkout: checkout, adults: adults, guestNationality: guestNationality, currency: currency, children: children, sessionId: sessionId, travelerId: travelerId).execute(apiResponseQueue) { result in
             switch result {
             case let .success(response):
@@ -57,7 +57,7 @@ open class SearchAPI {
      - parameter travelerId: (query) traveler unique id (optional)
      - returns: RequestBuilder<GetHotelRatesResponse> 
      */
-    open class func getHotelRatesWithRequestBuilder(hotelIds: String, checkin: String, checkout: String, adults: Int, guestNationality: String, currency: String, children: String? = nil, sessionId: String? = nil, travelerId: String? = nil) -> RequestBuilder<GetHotelRatesResponse> {
+    open class func getHotelRatesWithRequestBuilder(hotelIds: String, checkin: Date, checkout: Date, adults: Int, guestNationality: String, currency: String, children: String? = nil, sessionId: String? = nil, travelerId: String? = nil) -> RequestBuilder<GetHotelRatesResponse> {
         let localVariablePath = "/hotels/rates"
         let localVariableURLString = NuiteeAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
