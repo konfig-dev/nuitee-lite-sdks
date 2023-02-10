@@ -1,6 +1,14 @@
 outputDirectory: /tmp/nuitee-sdks-out
 specPath: openapi.yaml
 generators:
+  android:
+    version: 1.0.0
+    groupId: com.konfigthis.nuitee
+    artifactId: nuitee-android-sdk
+    outputDirectory: android
+    git:
+      userId: konfig-dev
+      repoId: nuitee-lite-sdks/tree/main/android
   java:
     disabled: true
     version: 1.0.0
