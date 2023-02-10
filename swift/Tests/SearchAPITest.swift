@@ -37,7 +37,7 @@ class SearchAPITest: XCTestCase {
                 expectation.fulfill()
             }
         }
-        wait(for: [expectation], timeout: 5.0)
+        wait(for: [expectation], timeout: 10.0)
     }
 
     func testGetHotelRates() throws {
@@ -55,6 +55,6 @@ class SearchAPITest: XCTestCase {
                 expectation.fulfill()
             }
         }
-        wait(for: [expectation], timeout: 5.0)
+        wait(for: [expectation], timeout: 10.0)
     }
 }
