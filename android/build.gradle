@@ -28,11 +28,11 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 33
     buildToolsVersion '28.0.3'
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 33
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -74,6 +74,7 @@ dependencies {
     testImplementation "junit:junit:$junit_version"
     testImplementation "org.robolectric:robolectric:${robolectric_version}"
     testImplementation "net.jodah:concurrentunit:${concurrent_unit_version}"
+    testImplementation project(path: ':')
 }
 
 afterEvaluate {
