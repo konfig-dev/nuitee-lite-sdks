@@ -10,62 +10,64 @@ Testing BookingManagementApiService
 package nuitee
 
 import (
-    "os"
-    "context"
-    "github.com/stretchr/testify/assert"
-    "github.com/stretchr/testify/require"
-    "testing"
-    nuitee "github.com/konfig-dev/nuitee-lite-sdks/go"
+	"context"
+	"encoding/json"
+	"fmt"
+	"os"
+	"testing"
+
+	nuitee "github.com/konfig-dev/nuitee-lite-sdks/go"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func Test_nuitee_BookingManagementApiService(t *testing.T) {
 
-    configuration := nuitee.NewConfiguration()
-    apiKey := os.Getenv("API_KEY")
-    configuration.Context = context.WithValue(configuration.Context, nuitee.ContextAPIKeys, map[string]nuitee.APIKey{
-    "ApiKeyAuth": {Key: apiKey},
-    })
-    apiClient := nuitee.NewAPIClient(configuration)
+	configuration := nuitee.NewConfiguration()
+	apiKey := os.Getenv("NUITEE_API_KEY")
+	configuration.Context = context.WithValue(configuration.Context, nuitee.ContextAPIKeys, map[string]nuitee.APIKey{
+		"ApiKeyAuth": {Key: apiKey},
+	})
+	apiClient := nuitee.NewAPIClient(configuration)
 
+	t.Run("Test BookingManagementApiService Cancel", func(t *testing.T) {
 
-    t.Run("Test BookingManagementApiService Cancel", func(t *testing.T) {
+		t.Skip("skip test") // remove to run test
 
-        t.Skip("skip test")  // remove to run test
+		var bookingId string
 
-        var bookingId string
+		resp, httpRes, err := apiClient.BookingManagementApi.Cancel(bookingId).Execute()
 
-        resp, httpRes, err := apiClient.BookingManagementApi.Cancel(bookingId).Execute()
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
 
-        require.Nil(t, err)
-        require.NotNil(t, resp)
-        assert.Equal(t, 200, httpRes.StatusCode)
+	})
 
-    })
+	t.Run("Test BookingManagementApiService ListBookings", func(t *testing.T) {
 
-    t.Run("Test BookingManagementApiService ListBookings", func(t *testing.T) {
+		t.Skip("skip test") // remove to run test
 
-        t.Skip("skip test")  // remove to run test
+		resp, httpRes, err := apiClient.BookingManagementApi.ListBookings().Execute()
 
-        resp, httpRes, err := apiClient.BookingManagementApi.ListBookings().Execute()
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
 
-        require.Nil(t, err)
-        require.NotNil(t, resp)
-        assert.Equal(t, 200, httpRes.StatusCode)
+	})
 
-    })
+	t.Run("Test BookingManagementApiService Retrieve", func(t *testing.T) {
 
-    t.Run("Test BookingManagementApiService Retrieve", func(t *testing.T) {
+		var bookingId string = "3uFbXs3Vz"
 
-        t.Skip("skip test")  // remove to run test
+		resp, httpRes, err := apiClient.BookingManagementApi.Retrieve(bookingId).Execute()
 
-        var bookingId string
-
-        resp, httpRes, err := apiClient.BookingManagementApi.Retrieve(bookingId).Execute()
-
-        require.Nil(t, err)
-        require.NotNil(t, resp)
-        assert.Equal(t, 200, httpRes.StatusCode)
-
-    })
+		res, _ := json.Marshal(resp)
+		fmt.Println(string(res))
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+		require.NotNil(t, resp.Data.BookingId)
+	})
 
 }
