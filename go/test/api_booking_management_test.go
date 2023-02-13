@@ -10,6 +10,8 @@ Testing BookingManagementApiService
 package nuitee
 
 import (
+    "os"
+    "context"
     "github.com/stretchr/testify/assert"
     "github.com/stretchr/testify/require"
     "testing"
@@ -19,7 +21,12 @@ import (
 func Test_nuitee_BookingManagementApiService(t *testing.T) {
 
     configuration := nuitee.NewConfiguration()
+    apiKey := os.Getenv("API_KEY")
+    configuration.Context = context.WithValue(configuration.Context, nuitee.ContextAPIKeys, map[string]nuitee.APIKey{
+    "ApiKeyAuth": {Key: apiKey},
+    })
     apiClient := nuitee.NewAPIClient(configuration)
+
 
     t.Run("Test BookingManagementApiService Cancel", func(t *testing.T) {
 
