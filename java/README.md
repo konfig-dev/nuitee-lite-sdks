@@ -12,8 +12,13 @@ lite api hotel booking api
 ## Requirements
 
 Building the API client library requires:
+
 1. Java 1.8+
 2. Maven (3.8.3+)/Gradle (7.2+)
+
+If you are adding this library to an Android Application or Library:
+
+3. Android 8.0+ (API Level 26+)
 
 ## Installation
 
@@ -39,23 +44,47 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.konfigthis.nuitee</groupId>
   <artifactId>nuitee-java-sdk</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <scope>compile</scope>
 </dependency>
 ```
 
 ### Gradle users
 
-Add this dependency to your project's build file:
+Add this dependency to your `build.gradle`:
 
 ```groovy
-  repositories {
-    mavenCentral()
-  }
+// build.gradle
+repositories {
+  mavenCentral()
+}
 
-  dependencies {
-     implementation "com.konfigthis.nuitee:nuitee-java-sdk:1.0.0"
-  }
+dependencies {
+   implementation "com.konfigthis.nuitee:nuitee-java-sdk:1.1.0"
+}
+```
+
+### Android users
+
+Make sure your `build.gradle` file as a `minSdk` version of at least 26:
+```groovy
+// build.gradle
+android {
+    defaultConfig {
+        minSdk 26
+    }
+}
+```
+
+Also make sure your library or application has internet permissions in your `AndroidManifest.xml`:
+
+```xml
+<!--AndroidManifest.xml-->
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
 ```
 
 ### Others
@@ -68,7 +97,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/nuitee-java-sdk-1.0.0.jar`
+* `target/nuitee-java-sdk-1.1.0.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -89,7 +118,8 @@ public class Example {
   public static void main(String[] args) {
 
     ApiClient apiClient = Configuration.getDefaultApiClient();
-    apiClient.setBasePath("https://api.nlite.ml/v1.0");
+    // Set custom base path if desired
+    // apiClient.setBasePath("https://api.nlite.ml/v1.0");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) apiClient.getAuthentication("ApiKeyAuth");
