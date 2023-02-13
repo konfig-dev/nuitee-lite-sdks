@@ -10,7 +10,6 @@ generators:
       userId: konfig-dev
       repoId: nuitee-lite-sdks/tree/main/java
   typescript:
-    disabled: true
     version: 1.0.0
     npmName: nuitee-typescript-sdk
     outputDirectory: typescript
@@ -25,17 +24,7 @@ generators:
     git:
       userId: konfig-dev
       repoId: nuitee-lite-sdks/tree/main/swift
-  kotlin:
-    disabled: true
-    version: 1.0.0
-    groupId: com.konfigthis.nuitee
-    artifactId: nuitee-kotlin-sdk
-    outputDirectory: kotlin
-    git:
-      userId: konfig-dev
-      repoId: nuitee-lite-sdks/tree/main/kotlin
   go:
-    disabled: true
     version: 1.0.0
     packageName: nuitee
     outputDirectory: go
