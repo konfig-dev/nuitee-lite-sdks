@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.license = 'MIT'
   s.homepage = 'https://github.com/konfig-dev/nuitee-lite-sdks/tree/main/swift'
   s.summary = 'Nuitee Swift SDK'
-  s.source_files = 'Nuitee/**/*.swift'
+  s.source_files = 'swift/Nuitee/**/*.swift'
   s.dependency 'AnyCodable-FlightSchool', '~> 0.6.1'
 end
