@@ -30,11 +30,11 @@ let bookRequest = BookRequest(prebookId: "prebookId_example", sessionId: "sessio
 // Hotel rate book
 BookAPI.book(bookRequest: bookRequest) { (response, error) in
     guard error == nil else {
-        print(error)
+        print(error!)
         return
     }
 
-    if (response) {
+    if response != nil {
         dump(response)
     }
 }
