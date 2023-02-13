@@ -1,0 +1,4 @@
+src/test/java/com/konfigthis/nuitee/client/api/BookApiTest.java
+src/test/java/com/konfigthis/nuitee/client/api/BookingManagementApiTest.java
+src/test/java/com/konfigthis/nuitee/client/api/SearchApiTest.java
+src/test/java/com/konfigthis/nuitee/client/api/StaticDataApiTest.java

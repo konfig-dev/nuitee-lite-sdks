@@ -2,7 +2,6 @@ outputDirectory: /tmp/nuitee-sdks-out
 specPath: openapi.yaml
 generators:
   java:
-    disabled: true
     version: 1.0.0
     groupId: com.konfigthis.nuitee
     artifactId: nuitee-java-sdk

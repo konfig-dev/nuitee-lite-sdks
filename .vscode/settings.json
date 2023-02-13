@@ -10,5 +10,5 @@
   "java.compile.nullAnalysis.mode": "automatic",
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
   "swiftformat.configSearchPaths": [".swiftformat", "swift/.swiftformat"],
-  "java.configuration.updateBuildConfiguration": "interactive"
+  "java.import.gradle.enabled": false
 }
