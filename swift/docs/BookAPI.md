@@ -21,7 +21,7 @@ This endpoint allows you to send a specific prebook ID along with the email to c
 ```swift
 import Nuitee
 
-let bookRequest = BookRequest(prebookId: "prebookId_example", sessionId: "sessionId_example", guestInfo: BookRequest_guestInfo(guestFirstName: "guestFirstName_example", guestLastName: "guestLastName_example", guestEmail: "guestEmail_example"), rateId: "rateId_example") // BookRequest |  (optional)
+let bookRequest = BookRequest(prebookId: "prebookId_example", sessionId: "sessionId_example", guestInfo: BookRequestGuestInfo(guestFirstName: "guestFirstName_example", guestLastName: "guestLastName_example", guestEmail: "guestEmail_example"), rateId: "rateId_example") // BookRequest |  (optional)
 
 // Hotel rate book
 BookAPI.book(bookRequest: bookRequest) { (response, error) in
