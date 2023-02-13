@@ -29,11 +29,11 @@ let countryCode = "countryCode_example" // String | country code, example \"IT\"
 // City list
 StaticDataAPI.listCities(countryCode: countryCode) { (response, error) in
     guard error == nil else {
-        print(error)
+        print(error!)
         return
     }
 
-    if (response) {
+    if response != nil {
         dump(response)
     }
 }
@@ -77,11 +77,11 @@ import Nuitee
 // Country list
 StaticDataAPI.listCountries() { (response, error) in
     guard error == nil else {
-        print(error)
+        print(error!)
         return
     }
 
-    if (response) {
+    if response != nil {
         dump(response)
     }
 }
@@ -120,11 +120,11 @@ import Nuitee
 // Currency list
 StaticDataAPI.listCurrencies() { (response, error) in
     guard error == nil else {
-        print(error)
+        print(error!)
         return
     }
 
-    if (response) {
+    if response != nil {
         dump(response)
     }
 }
@@ -174,11 +174,11 @@ let iataCode = "iataCode_example" // String | airport iata code (optional)
 // Hotel list
 StaticDataAPI.listHotels(countryCode: countryCode, hotelName: hotelName, cityName: cityName, limit: limit, offset: offset, latitude: latitude, longitude: longitude, distance: distance, iataCode: iataCode) { (response, error) in
     guard error == nil else {
-        print(error)
+        print(error!)
         return
     }
 
-    if (response) {
+    if response != nil {
         dump(response)
     }
 }
@@ -230,11 +230,11 @@ import Nuitee
 // IATA code list
 StaticDataAPI.listIataCodes() { (response, error) in
     guard error == nil else {
-        print(error)
+        print(error!)
         return
     }
 
-    if (response) {
+    if response != nil {
         dump(response)
     }
 }

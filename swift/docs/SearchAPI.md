@@ -34,11 +34,11 @@ let travelerId = "travelerId_example" // String | traveler unique id (optional)
 // Hotel full rate availability
 SearchAPI.getHotelRates(hotelIds: hotelIds, checkin: checkin, checkout: checkout, adults: adults, guestNationality: guestNationality, currency: currency, children: children, sessionId: sessionId, travelerId: travelerId) { (response, error) in
     guard error == nil else {
-        print(error)
+        print(error!)
         return
     }
 
-    if (response) {
+    if response != nil {
         dump(response)
     }
 }
@@ -102,11 +102,11 @@ let travelerId = "travelerId_example" // String |  (optional)
 // Hotel minimum rate availability
 SearchAPI.getHotels(hotelIds: hotelIds, checkin: checkin, checkout: checkout, country: country, adults: adults, currency: currency, guestNationality: guestNationality, latitude: latitude, longitude: longitude, distance: distance, children: children, travelerId: travelerId) { (response, error) in
     guard error == nil else {
-        print(error)
+        print(error!)
         return
     }
 
-    if (response) {
+    if response != nil {
         dump(response)
     }
 }

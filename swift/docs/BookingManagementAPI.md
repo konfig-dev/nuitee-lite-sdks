@@ -27,11 +27,11 @@ let bookingId = "bookingId_example" // String | (Required) The unique identifier
 // Booking cancel
 BookingManagementAPI.cancel(bookingId: bookingId) { (response, error) in
     guard error == nil else {
-        print(error)
+        print(error!)
         return
     }
 
-    if (response) {
+    if response != nil {
         dump(response)
     }
 }
@@ -76,11 +76,11 @@ let guestId = "guestId_example" // String | guest id of bookings
 // Booking list
 BookingManagementAPI.listBookings(guestId: guestId) { (response, error) in
     guard error == nil else {
-        print(error)
+        print(error!)
         return
     }
 
-    if (response) {
+    if response != nil {
         dump(response)
     }
 }
@@ -125,11 +125,11 @@ let bookingId = "bookingId_example" // String | (Required) The unique identifier
 // Booking retrieve
 BookingManagementAPI.retrieve(bookingId: bookingId) { (response, error) in
     guard error == nil else {
-        print(error)
+        print(error!)
         return
     }
 
-    if (response) {
+    if response != nil {
         dump(response)
     }
 }
