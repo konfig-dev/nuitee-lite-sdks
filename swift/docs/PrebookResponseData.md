@@ -13,6 +13,6 @@ Name | Type | Description | Notes
 **cancellationChanged** | **Bool** | has cancellation changed | [optional] 
 **boardChanged** | **Bool** | has board changed | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../README.md#models) [[Back to API list]](../README.md#api-endpoints) [[Back to README]](../README.md)
 
 
