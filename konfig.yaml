@@ -12,6 +12,7 @@ generators:
   typescript:
     version: 1.0.0
     npmName: nuitee-typescript-sdk
+    clientName: Nuitee
     outputDirectory: typescript
     git:
       userId: konfig-dev
@@ -24,6 +25,14 @@ generators:
     git:
       userId: konfig-dev
       repoId: nuitee-lite-sdks/tree/main/swift
+  php:
+    version: 1.0.0
+    packageName: nuitee-lite-php
+    invokerPackage: Nuitee
+    outputDirectory: php
+    git:
+      userId: konfig-dev
+      repoId: nuitee-lite-sdks/tree/main/php
   go:
     version: 1.0.0
     packageName: nuitee
