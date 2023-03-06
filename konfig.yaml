@@ -27,7 +27,7 @@ generators:
       repoId: nuitee-lite-sdks/tree/main/swift
   php:
     version: 1.0.0
-    packageName: nuitee-lite-php
+    packageName: nuitee-lite-php-sdk
     invokerPackage: Nuitee
     outputDirectory: php
     git:
