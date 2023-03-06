@@ -12,8 +12,8 @@
     "license": "unlicense",
     "authors": [
         {
-            "name": "",
-            "homepage": ""
+            "name": "Konfig",
+            "homepage": "https://konfigthis.com"
         }
     ],
     "require": {
