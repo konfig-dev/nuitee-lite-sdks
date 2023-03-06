@@ -24,10 +24,8 @@ class SearchAPITest: XCTestCase {
 
     func testGetHotels() throws {
         let expectation = XCTestExpectation(description: "Response is not null")
-        let checkin = dateFormatter.date(from: "2023-02-15")
-        let checkout = dateFormatter.date(from: "2023-02-16")
         let hotelIds = "1000018,26191,248093,57871,268206,28906,497829,436827,1000091,1000876,1001301,1001325,1001464,99249,99122,99121,99119"
-        SearchAPI.getHotels(hotelIds: hotelIds, checkin: checkin!, checkout: checkout!, country: "US", adults: 1, currency: "USD", guestNationality: "US") { response, error in
+        SearchAPI.getHotels(hotelIds: hotelIds, checkin: "2025-01-01", checkout: "2025-01-25", country: "US", adults: 1, currency: "USD", guestNationality: "US") { response, error in
             guard error == nil else {
                 print(error!)
                 return
@@ -42,10 +40,8 @@ class SearchAPITest: XCTestCase {
 
     func testGetHotelRates() throws {
         let expectation = XCTestExpectation(description: "Response is not null")
-        let checkin = dateFormatter.date(from: "2023-03-15")
-        let checkout = dateFormatter.date(from: "2023-03-16")
         let hotelIds = "57871,26191,248093,268206,28906,497829,436827"
-        SearchAPI.getHotelRates(hotelIds: hotelIds, checkin: checkin!, checkout: checkout!, adults: 1, guestNationality: "US", currency: "USD") { response, error in
+        SearchAPI.getHotelRates(hotelIds: hotelIds, checkin: "2025-01-01", checkout: "2025-01-25", adults: 1, guestNationality: "US", currency: "USD") { response, error in
             guard error == nil else {
                 print(error!)
                 return

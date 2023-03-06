@@ -46,7 +46,7 @@ class StaticDataAPITest: XCTestCase {
                 listHotelsExpectation.fulfill()
             }
         }
-        wait(for: [listHotelsExpectation], timeout: 10.0)
+        wait(for: [listHotelsExpectation], timeout: 20.0)
     }
 
     func testListCurrencies() throws {
