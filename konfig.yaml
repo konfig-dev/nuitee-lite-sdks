@@ -18,7 +18,7 @@ generators:
       userId: konfig-dev
       repoId: nuitee-lite-sdks/tree/main/typescript
   swift:
-    version: 1.5.0
+    version: 2.0.0
     projectName: Nuitee
     podAuthors: nuitee.com
     outputDirectory: swift
