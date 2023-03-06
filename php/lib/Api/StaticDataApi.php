@@ -81,8 +81,8 @@ class StaticDataApi
      * @param int             $hostIndex (Optional) host index to select the list of hosts if defined in the OpenAPI spec
      */
     public function __construct(
-        ClientInterface $client = null,
         Configuration $config = null,
+        ClientInterface $client = null,
         HeaderSelector $selector = null,
         $hostIndex = 0
     ) {
