@@ -1,6 +1,6 @@
 <?php
 /**
- * ListHotels400Response
+ * BookResponseDataCancellationFeePrice
  *
  * PHP version 7.4
  *
@@ -26,13 +26,13 @@ use \ArrayAccess;
 use \Nuitee\ObjectSerializer;
 
 /**
- * ListHotels400Response Class Doc Comment
+ * BookResponseDataCancellationFeePrice Class Doc Comment
  *
  * @category Class
  * @package  Nuitee
  * @implements \ArrayAccess<string, mixed>
  */
-class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSerializable
+class BookResponseDataCancellationFeePrice implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -41,7 +41,7 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
       *
       * @var string
       */
-    protected static $openAPIModelName = 'ListHotels400Response';
+    protected static $openAPIModelName = 'BookResponse_data_cancellation_fee_price';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -49,7 +49,8 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'error' => '\Nuitee\Model\ListHotels400ResponseError'
+        'amount' => 'float',
+        'currency' => 'string'
     ];
 
     /**
@@ -60,7 +61,8 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'error' => null
+        'amount' => null,
+        'currency' => null
     ];
 
     /**
@@ -69,7 +71,8 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'error' => false
+        'amount' => false,
+		'currency' => false
     ];
 
     /**
@@ -158,7 +161,8 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static $attributeMap = [
-        'error' => 'error'
+        'amount' => 'amount',
+        'currency' => 'currency'
     ];
 
     /**
@@ -167,7 +171,8 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static $setters = [
-        'error' => 'setError'
+        'amount' => 'setAmount',
+        'currency' => 'setCurrency'
     ];
 
     /**
@@ -176,7 +181,8 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static $getters = [
-        'error' => 'getError'
+        'amount' => 'getAmount',
+        'currency' => 'getCurrency'
     ];
 
     /**
@@ -236,7 +242,8 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
      */
     public function __construct(array $data = null)
     {
-        $this->setIfExists('error', $data ?? [], null);
+        $this->setIfExists('amount', $data ?? [], null);
+        $this->setIfExists('currency', $data ?? [], null);
     }
 
     /**
@@ -282,30 +289,59 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
 
 
     /**
-     * Gets error
+     * Gets amount
      *
-     * @return \Nuitee\Model\ListHotels400ResponseError|null
+     * @return float|null
      */
-    public function getError()
+    public function getAmount()
     {
-        return $this->container['error'];
+        return $this->container['amount'];
     }
 
     /**
-     * Sets error
+     * Sets amount
      *
-     * @param \Nuitee\Model\ListHotels400ResponseError|null $error error
+     * @param float|null $amount amount
      *
      * @return self
      */
-    public function setError($error)
+    public function setAmount($amount)
     {
 
-        if (is_null($error)) {
-            throw new \InvalidArgumentException('non-nullable error cannot be null');
+        if (is_null($amount)) {
+            throw new \InvalidArgumentException('non-nullable amount cannot be null');
         }
 
-        $this->container['error'] = $error;
+        $this->container['amount'] = $amount;
+
+        return $this;
+    }
+
+    /**
+     * Gets currency
+     *
+     * @return string|null
+     */
+    public function getCurrency()
+    {
+        return $this->container['currency'];
+    }
+
+    /**
+     * Sets currency
+     *
+     * @param string|null $currency currency
+     *
+     * @return self
+     */
+    public function setCurrency($currency)
+    {
+
+        if (is_null($currency)) {
+            throw new \InvalidArgumentException('non-nullable currency cannot be null');
+        }
+
+        $this->container['currency'] = $currency;
 
         return $this;
     }

@@ -47,29 +47,32 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-
-
 // Configure API key authorization: ApiKeyAuth
 $config = Nuitee\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Nuitee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-
 $apiInstance = new Nuitee\Api\BookApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
+    // new GuzzleHttp\Client(),
     $config
 );
-$book_request = {"prebookId":"v43KK76NH","sessionId":"GIYDEMZNGAZS2MJVPQZDAMRTFUYDGLJRGZ6DC7BRGIWDS7CNIF6HYMLEMRWV6Z3EKNXGC","contact":{"firstName":"Steve","lastName":"Kim","email":"test@nlite.ml"},"rateId":"2_3P6L4TRYIFKLFM3DRKUQ4SBFCSO3QJBU27UQ76RU6HTAVUULOUZN3HLFLDS6HRUUQXXZNPELVXHLEXZF3J26PGYXGZEMZOPATZGAUBZLMB7BR6OL7QW4FIAIWTOCOLVHBIRGQFE7UJLTQP5RB6AXVPADIRT34YR56BBBSLSAWK2BMTRYBFRZCYG6HQKMULTSO6JIWWTEGVSBOHNFO7KTFXFMGCULXME2B4PZDCFWK62PT3EL4XUVOEB37V2EA7CWJKOZZU4OYDFB36YWUCID6LWVCCRMVU4PYZH2WBTJ6SLVVEGVZHTVGCVXA5GXEOCUE4ARMWXCIGRPASA5WBFI2T557GWUUZ6YMBZZMPUPCWI7DVO2OG6KY36WWASVBLEJRYFHJRRGQKDV5HY6INAD3YARYKVNFMITJ6BX5LVBVXNF33OZF34ZQDE5S74ND73FMHCYSSTZFOBCOBKYDHQ5BWGRYS7GALROITVAFG2OIFSXLUSKRT3MEURPJL7S3MHWEJMAYJFGGPMRZBEQZXAXDJI","travelerId":"fr5Yght9","IP":"212.56.43.5"}; // \Nuitee\Model\BookRequest
+
+$book_request = [
+        "prebook_id" => "v43KK76NH",
+        "session_id" => "GIYDEMZNGAZS2MJVPQZDAMRTFUYDGLJRGZ6DC7BRGIWDS7CNIF6HYMLEMRWV6Z3EKNXGC",
+        "rate_id" => "2_3P6L4TRYIFKLFM3DRKUQ4SBFCSO3QJBU27UQ76RU6HTAVUULOUZN3HLFLDS6HRUUQXXZNPELVXHLEXZF3J26PGYXGZEMZOPATZGAUBZLMB7BR6OL7QW4FIAIWTOCOLVHBIRGQFE7UJLTQP5RB6AXVPADIRT34YR56BBBSLSAWK2BMTRYBFRZCYG6HQKMULTSO6JIWWTEGVSBOHNFO7KTFXFMGCULXME2B4PZDCFWK62PT3EL4XUVOEB37V2EA7CWJKOZZU4OYDFB36YWUCID6LWVCCRMVU4PYZH2WBTJ6SLVVEGVZHTVGCVXA5GXEOCUE4ARMWXCIGRPASA5WBFI2T557GWUUZ6YMBZZMPUPCWI7DVO2OG6KY36WWASVBLEJRYFHJRRGQKDV5HY6INAD3YARYKVNFMITJ6BX5LVBVXNF33OZF34ZQDE5S74ND73FMHCYSSTZFOBCOBKYDHQ5BWGRYS7GALROITVAFG2OIFSXLUSKRT3MEURPJL7S3MHWEJMAYJFGGPMRZBEQZXAXDJI",
+    ];
 
 try {
-    $result = $apiInstance->book($book_request);
+    $result = $apiInstance->book(
+        book_request: $book_request
+    );
     print_r($result);
-} catch (Exception $e) {
+} catch (\Exception $e) {
     echo 'Exception when calling BookApi->book: ', $e->getMessage(), PHP_EOL;
 }
-
 ```
 
 ## API Endpoints
@@ -107,6 +110,7 @@ Class | Method | HTTP request | Description
 - [BookResponseDataBookedRoomsInnerRoomType](docs/Model/BookResponseDataBookedRoomsInnerRoomType.md)
 - [BookResponseDataCancellation](docs/Model/BookResponseDataCancellation.md)
 - [BookResponseDataCancellationFee](docs/Model/BookResponseDataCancellationFee.md)
+- [BookResponseDataCancellationFeePrice](docs/Model/BookResponseDataCancellationFeePrice.md)
 - [BookResponseDataCancellationPolicies](docs/Model/BookResponseDataCancellationPolicies.md)
 - [BookResponseDataGuestInfo](docs/Model/BookResponseDataGuestInfo.md)
 - [BookResponseDataHotel](docs/Model/BookResponseDataHotel.md)
@@ -116,6 +120,7 @@ Class | Method | HTTP request | Description
 - [Cancel400ResponseError](docs/Model/Cancel400ResponseError.md)
 - [Cancel401Response](docs/Model/Cancel401Response.md)
 - [Cancel500Response](docs/Model/Cancel500Response.md)
+- [Cancel500ResponseError](docs/Model/Cancel500ResponseError.md)
 - [CancelResponse](docs/Model/CancelResponse.md)
 - [GetHotelRates400Response](docs/Model/GetHotelRates400Response.md)
 - [GetHotelRates401Response](docs/Model/GetHotelRates401Response.md)
@@ -143,6 +148,7 @@ Class | Method | HTTP request | Description
 - [ListCurrenciesResponse](docs/Model/ListCurrenciesResponse.md)
 - [ListCurrenciesResponseDataInner](docs/Model/ListCurrenciesResponseDataInner.md)
 - [ListHotels400Response](docs/Model/ListHotels400Response.md)
+- [ListHotels400ResponseError](docs/Model/ListHotels400ResponseError.md)
 - [ListHotels401Response](docs/Model/ListHotels401Response.md)
 - [ListHotelsResponse](docs/Model/ListHotelsResponse.md)
 - [ListHotelsResponseDataInner](docs/Model/ListHotelsResponseDataInner.md)
@@ -165,6 +171,7 @@ Class | Method | HTTP request | Description
 - [RetrieveResponseDataBookedRoomsInnerRate](docs/Model/RetrieveResponseDataBookedRoomsInnerRate.md)
 - [RetrieveResponseDataBookedRoomsInnerRoomType](docs/Model/RetrieveResponseDataBookedRoomsInnerRoomType.md)
 - [RetrieveResponseDataCancellationPolicies](docs/Model/RetrieveResponseDataCancellationPolicies.md)
+- [RetrieveResponseDataGuestInfo](docs/Model/RetrieveResponseDataGuestInfo.md)
 
 ## Authorization
 

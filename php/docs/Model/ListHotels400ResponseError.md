@@ -1,9 +1,11 @@
-# # Cancel500Response
+# # ListHotels400ResponseError
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**error** | [**\Nuitee\Model\Cancel500ResponseError**](Cancel500ResponseError.md) |  | [optional]
+**description** | **string** |  | [optional]
+**code** | **int** |  | [optional]
+**message** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

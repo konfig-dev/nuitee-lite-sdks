@@ -1,6 +1,6 @@
 <?php
 /**
- * ListHotels400Response
+ * Cancel500ResponseError
  *
  * PHP version 7.4
  *
@@ -26,13 +26,13 @@ use \ArrayAccess;
 use \Nuitee\ObjectSerializer;
 
 /**
- * ListHotels400Response Class Doc Comment
+ * Cancel500ResponseError Class Doc Comment
  *
  * @category Class
  * @package  Nuitee
  * @implements \ArrayAccess<string, mixed>
  */
-class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSerializable
+class Cancel500ResponseError implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -41,7 +41,7 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
       *
       * @var string
       */
-    protected static $openAPIModelName = 'ListHotels400Response';
+    protected static $openAPIModelName = 'Cancel500Response_error';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -49,7 +49,8 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'error' => '\Nuitee\Model\ListHotels400ResponseError'
+        'code' => 'int',
+        'message' => 'string'
     ];
 
     /**
@@ -60,7 +61,8 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'error' => null
+        'code' => null,
+        'message' => null
     ];
 
     /**
@@ -69,7 +71,8 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'error' => false
+        'code' => false,
+		'message' => false
     ];
 
     /**
@@ -158,7 +161,8 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static $attributeMap = [
-        'error' => 'error'
+        'code' => 'code',
+        'message' => 'message'
     ];
 
     /**
@@ -167,7 +171,8 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static $setters = [
-        'error' => 'setError'
+        'code' => 'setCode',
+        'message' => 'setMessage'
     ];
 
     /**
@@ -176,7 +181,8 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static $getters = [
-        'error' => 'getError'
+        'code' => 'getCode',
+        'message' => 'getMessage'
     ];
 
     /**
@@ -236,7 +242,8 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
      */
     public function __construct(array $data = null)
     {
-        $this->setIfExists('error', $data ?? [], null);
+        $this->setIfExists('code', $data ?? [], null);
+        $this->setIfExists('message', $data ?? [], null);
     }
 
     /**
@@ -282,30 +289,59 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
 
 
     /**
-     * Gets error
+     * Gets code
      *
-     * @return \Nuitee\Model\ListHotels400ResponseError|null
+     * @return int|null
      */
-    public function getError()
+    public function getCode()
     {
-        return $this->container['error'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets error
+     * Sets code
      *
-     * @param \Nuitee\Model\ListHotels400ResponseError|null $error error
+     * @param int|null $code code
      *
      * @return self
      */
-    public function setError($error)
+    public function setCode($code)
     {
 
-        if (is_null($error)) {
-            throw new \InvalidArgumentException('non-nullable error cannot be null');
+        if (is_null($code)) {
+            throw new \InvalidArgumentException('non-nullable code cannot be null');
         }
 
-        $this->container['error'] = $error;
+        $this->container['code'] = $code;
+
+        return $this;
+    }
+
+    /**
+     * Gets message
+     *
+     * @return string|null
+     */
+    public function getMessage()
+    {
+        return $this->container['message'];
+    }
+
+    /**
+     * Sets message
+     *
+     * @param string|null $message message
+     *
+     * @return self
+     */
+    public function setMessage($message)
+    {
+
+        if (is_null($message)) {
+            throw new \InvalidArgumentException('non-nullable message cannot be null');
+        }
+
+        $this->container['message'] = $message;
 
         return $this;
     }

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **checkin** | **string** |  | [optional]
 **checkout** | **string** |  | [optional]
 **booked_rooms** | [**\Nuitee\Model\RetrieveResponseDataBookedRoomsInner[]**](RetrieveResponseDataBookedRoomsInner.md) |  | [optional]
-**guest_info** | [**\Nuitee\Model\BookResponseDataGuestInfo**](BookResponseDataGuestInfo.md) |  | [optional]
+**guest_info** | [**\Nuitee\Model\RetrieveResponseDataGuestInfo**](RetrieveResponseDataGuestInfo.md) |  | [optional]
 **created_at** | **string** |  | [optional]
 **cancellation_policies** | [**\Nuitee\Model\RetrieveResponseDataCancellationPolicies**](RetrieveResponseDataCancellationPolicies.md) |  | [optional]
 

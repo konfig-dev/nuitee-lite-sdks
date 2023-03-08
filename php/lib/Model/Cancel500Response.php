@@ -49,7 +49,7 @@ class Cancel500Response implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'error' => '\Nuitee\Model\Cancel400ResponseError'
+        'error' => '\Nuitee\Model\Cancel500ResponseError'
     ];
 
     /**
@@ -284,7 +284,7 @@ class Cancel500Response implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets error
      *
-     * @return \Nuitee\Model\Cancel400ResponseError|null
+     * @return \Nuitee\Model\Cancel500ResponseError|null
      */
     public function getError()
     {
@@ -294,7 +294,7 @@ class Cancel500Response implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets error
      *
-     * @param \Nuitee\Model\Cancel400ResponseError|null $error error
+     * @param \Nuitee\Model\Cancel500ResponseError|null $error error
      *
      * @return self
      */

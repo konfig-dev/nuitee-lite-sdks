@@ -1,6 +1,6 @@
 <?php
 /**
- * ListHotels400Response
+ * RetrieveResponseDataGuestInfo
  *
  * PHP version 7.4
  *
@@ -26,13 +26,13 @@ use \ArrayAccess;
 use \Nuitee\ObjectSerializer;
 
 /**
- * ListHotels400Response Class Doc Comment
+ * RetrieveResponseDataGuestInfo Class Doc Comment
  *
  * @category Class
  * @package  Nuitee
  * @implements \ArrayAccess<string, mixed>
  */
-class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSerializable
+class RetrieveResponseDataGuestInfo implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -41,7 +41,7 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
       *
       * @var string
       */
-    protected static $openAPIModelName = 'ListHotels400Response';
+    protected static $openAPIModelName = 'RetrieveResponse_data_guestInfo';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -49,7 +49,9 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'error' => '\Nuitee\Model\ListHotels400ResponseError'
+        'guest_first_name' => 'string',
+        'guest_last_name' => 'string',
+        'guest_email' => 'string'
     ];
 
     /**
@@ -60,7 +62,9 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'error' => null
+        'guest_first_name' => null,
+        'guest_last_name' => null,
+        'guest_email' => null
     ];
 
     /**
@@ -69,7 +73,9 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'error' => false
+        'guest_first_name' => false,
+		'guest_last_name' => false,
+		'guest_email' => false
     ];
 
     /**
@@ -158,7 +164,9 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static $attributeMap = [
-        'error' => 'error'
+        'guest_first_name' => 'guestFirstName',
+        'guest_last_name' => 'guestLastName',
+        'guest_email' => 'guestEmail'
     ];
 
     /**
@@ -167,7 +175,9 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static $setters = [
-        'error' => 'setError'
+        'guest_first_name' => 'setGuestFirstName',
+        'guest_last_name' => 'setGuestLastName',
+        'guest_email' => 'setGuestEmail'
     ];
 
     /**
@@ -176,7 +186,9 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static $getters = [
-        'error' => 'getError'
+        'guest_first_name' => 'getGuestFirstName',
+        'guest_last_name' => 'getGuestLastName',
+        'guest_email' => 'getGuestEmail'
     ];
 
     /**
@@ -236,7 +248,9 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
      */
     public function __construct(array $data = null)
     {
-        $this->setIfExists('error', $data ?? [], null);
+        $this->setIfExists('guest_first_name', $data ?? [], null);
+        $this->setIfExists('guest_last_name', $data ?? [], null);
+        $this->setIfExists('guest_email', $data ?? [], null);
     }
 
     /**
@@ -282,30 +296,88 @@ class ListHotels400Response implements ModelInterface, ArrayAccess, \JsonSeriali
 
 
     /**
-     * Gets error
+     * Gets guest_first_name
      *
-     * @return \Nuitee\Model\ListHotels400ResponseError|null
+     * @return string|null
      */
-    public function getError()
+    public function getGuestFirstName()
     {
-        return $this->container['error'];
+        return $this->container['guest_first_name'];
     }
 
     /**
-     * Sets error
+     * Sets guest_first_name
      *
-     * @param \Nuitee\Model\ListHotels400ResponseError|null $error error
+     * @param string|null $guest_first_name guest_first_name
      *
      * @return self
      */
-    public function setError($error)
+    public function setGuestFirstName($guest_first_name)
     {
 
-        if (is_null($error)) {
-            throw new \InvalidArgumentException('non-nullable error cannot be null');
+        if (is_null($guest_first_name)) {
+            throw new \InvalidArgumentException('non-nullable guest_first_name cannot be null');
         }
 
-        $this->container['error'] = $error;
+        $this->container['guest_first_name'] = $guest_first_name;
+
+        return $this;
+    }
+
+    /**
+     * Gets guest_last_name
+     *
+     * @return string|null
+     */
+    public function getGuestLastName()
+    {
+        return $this->container['guest_last_name'];
+    }
+
+    /**
+     * Sets guest_last_name
+     *
+     * @param string|null $guest_last_name guest_last_name
+     *
+     * @return self
+     */
+    public function setGuestLastName($guest_last_name)
+    {
+
+        if (is_null($guest_last_name)) {
+            throw new \InvalidArgumentException('non-nullable guest_last_name cannot be null');
+        }
+
+        $this->container['guest_last_name'] = $guest_last_name;
+
+        return $this;
+    }
+
+    /**
+     * Gets guest_email
+     *
+     * @return string|null
+     */
+    public function getGuestEmail()
+    {
+        return $this->container['guest_email'];
+    }
+
+    /**
+     * Sets guest_email
+     *
+     * @param string|null $guest_email guest_email
+     *
+     * @return self
+     */
+    public function setGuestEmail($guest_email)
+    {
+
+        if (is_null($guest_email)) {
+            throw new \InvalidArgumentException('non-nullable guest_email cannot be null');
+        }
+
+        $this->container['guest_email'] = $guest_email;
 
         return $this;
     }

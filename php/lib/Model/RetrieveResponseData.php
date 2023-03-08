@@ -55,7 +55,7 @@ class RetrieveResponseData implements ModelInterface, ArrayAccess, \JsonSerializ
         'checkin' => 'string',
         'checkout' => 'string',
         'booked_rooms' => '\Nuitee\Model\RetrieveResponseDataBookedRoomsInner[]',
-        'guest_info' => '\Nuitee\Model\BookResponseDataGuestInfo',
+        'guest_info' => '\Nuitee\Model\RetrieveResponseDataGuestInfo',
         'created_at' => 'string',
         'cancellation_policies' => '\Nuitee\Model\RetrieveResponseDataCancellationPolicies'
     ];
@@ -514,7 +514,7 @@ class RetrieveResponseData implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets guest_info
      *
-     * @return \Nuitee\Model\BookResponseDataGuestInfo|null
+     * @return \Nuitee\Model\RetrieveResponseDataGuestInfo|null
      */
     public function getGuestInfo()
     {
@@ -524,7 +524,7 @@ class RetrieveResponseData implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets guest_info
      *
-     * @param \Nuitee\Model\BookResponseDataGuestInfo|null $guest_info guest_info
+     * @param \Nuitee\Model\RetrieveResponseDataGuestInfo|null $guest_info guest_info
      *
      * @return self
      */

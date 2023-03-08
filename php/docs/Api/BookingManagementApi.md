@@ -25,25 +25,26 @@ This endpoint allows you to cancel a booking based on a booking ID. The refund a
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-
 // Configure API key authorization: ApiKeyAuth
 $config = Nuitee\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Nuitee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-
 $apiInstance = new Nuitee\Api\BookingManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
+    // new GuzzleHttp\Client(),
     $config
 );
-$booking_id = SEMkJ9lNM; // string | (Required) The unique identifier of the booking you would like to update.
+
+$booking_id = "SEMkJ9lNM";
 
 try {
-    $result = $apiInstance->cancel($booking_id);
+    $result = $apiInstance->cancel(
+        booking_id: $booking_id
+    );
     print_r($result);
-} catch (Exception $e) {
+} catch (\Exception $e) {
     echo 'Exception when calling BookingManagementApi->cancel: ', $e->getMessage(), PHP_EOL;
 }
 ```
@@ -87,25 +88,26 @@ List bookings by guestId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-
 // Configure API key authorization: ApiKeyAuth
 $config = Nuitee\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Nuitee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-
 $apiInstance = new Nuitee\Api\BookingManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
+    // new GuzzleHttp\Client(),
     $config
 );
-$guest_id = 'guest_id_example'; // string | guest id of bookings
+
+$guest_id = "guestId_example";
 
 try {
-    $result = $apiInstance->listBookings($guest_id);
+    $result = $apiInstance->listBookings(
+        guest_id: $guest_id
+    );
     print_r($result);
-} catch (Exception $e) {
+} catch (\Exception $e) {
     echo 'Exception when calling BookingManagementApi->listBookings: ', $e->getMessage(), PHP_EOL;
 }
 ```
@@ -149,25 +151,26 @@ This endpoint allows you to retrieve all the information for specific booking ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-
 // Configure API key authorization: ApiKeyAuth
 $config = Nuitee\Configuration::getDefaultConfiguration()->setApiKey('X-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Nuitee\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Key', 'Bearer');
 
-
 $apiInstance = new Nuitee\Api\BookingManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
+    // new GuzzleHttp\Client(),
     $config
 );
-$booking_id = SEMkJ9lNM; // string | (Required) The unique identifier of the booking you would like to update.
+
+$booking_id = "SEMkJ9lNM";
 
 try {
-    $result = $apiInstance->retrieve($booking_id);
+    $result = $apiInstance->retrieve(
+        booking_id: $booking_id
+    );
     print_r($result);
-} catch (Exception $e) {
+} catch (\Exception $e) {
     echo 'Exception when calling BookingManagementApi->retrieve: ', $e->getMessage(), PHP_EOL;
 }
 ```

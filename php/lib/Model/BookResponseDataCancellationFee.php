@@ -51,7 +51,7 @@ class BookResponseDataCancellationFee implements ModelInterface, ArrayAccess, \J
     protected static $openAPITypes = [
         'type' => 'string',
         'count' => 'int',
-        'price' => '\Nuitee\Model\GetHotelRatesResponseDataInnerRoomTypesInnerRatesInnerRetailRateTotalInner'
+        'price' => '\Nuitee\Model\BookResponseDataCancellationFeePrice'
     ];
 
     /**
@@ -356,7 +356,7 @@ class BookResponseDataCancellationFee implements ModelInterface, ArrayAccess, \J
     /**
      * Gets price
      *
-     * @return \Nuitee\Model\GetHotelRatesResponseDataInnerRoomTypesInnerRatesInnerRetailRateTotalInner|null
+     * @return \Nuitee\Model\BookResponseDataCancellationFeePrice|null
      */
     public function getPrice()
     {
@@ -366,7 +366,7 @@ class BookResponseDataCancellationFee implements ModelInterface, ArrayAccess, \J
     /**
      * Sets price
      *
-     * @param \Nuitee\Model\GetHotelRatesResponseDataInnerRoomTypesInnerRatesInnerRetailRateTotalInner|null $price price
+     * @param \Nuitee\Model\BookResponseDataCancellationFeePrice|null $price price
      *
      * @return self
      */
