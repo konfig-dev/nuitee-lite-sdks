@@ -8,6 +8,7 @@
   ],
   "python.testing.unittestEnabled": true,
   "python.testing.pytestEnabled": false,
+  "dotnet-test-explorer.testProjectPath": "**/*.sln",
   "python.testing.unittestArgs": [
     "-v",
     "-s",
