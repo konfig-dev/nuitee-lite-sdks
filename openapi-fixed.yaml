@@ -75,21 +75,22 @@ paths:
           schema:
             type: string
           required: true
-          example: 49117,49123
+          example: >-
+            1000091,1000876,1001325,1001464,99249,99122,99121,99119,580014,1032513
         - description: Check in data in YYYY-MM-DD format
           name: checkin
           in: query
           schema:
             type: string
           required: true
-          example: '2023-03-15'
+          example: '2023-11-15'
         - description: Check out data in YYYY-MM-DD format
           name: checkout
           in: query
           schema:
             type: string
           required: true
-          example: '2023-03-16'
+          example: '2023-11-16'
         - description: Currency code - example (USD)
           name: currency
           in: query
@@ -360,21 +361,22 @@ paths:
           schema:
             type: string
           required: true
-          example: 49117,49123
+          example: >-
+            1000091,1000876,1001325,1001464,99249,99122,99121,99119,580014,1032513
         - description: Check in data in YYYY-MM-DD format
           name: checkin
           in: query
           schema:
             type: string
           required: true
-          example: '2023-03-15'
+          example: '2023-11-15'
         - description: Check out data in YYYY-MM-DD format
           name: checkout
           in: query
           schema:
             type: string
           required: true
-          example: '2023-03-16'
+          example: '2023-11-16'
         - description: Guest nationality ISO-2 code - example (SG)
           name: guestNationality
           in: query
@@ -542,11 +544,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-11 23:59:59'
+                                    - cancelTime: '2023-11-11 23:59:59'
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: '2023-03-12 00:00:00'
+                                    - cancelTime: '2023-11-12 00:00:00'
                                       amount: 4357.6
                                       currency: USD
                                       type: amount
@@ -626,11 +628,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-11 23:59:59'
+                                    - cancelTime: '2023-11-11 23:59:59'
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: '2023-03-12 00:00:00'
+                                    - cancelTime: '2023-11-12 00:00:00'
                                       amount: 4586.63
                                       currency: USD
                                       type: amount
@@ -710,11 +712,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-11 23:59:59'
+                                    - cancelTime: '2023-11-11 23:59:59'
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: '2023-03-12 00:00:00'
+                                    - cancelTime: '2023-11-12 00:00:00'
                                       amount: 4643.89
                                       currency: USD
                                       type: amount
@@ -831,11 +833,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-11 23:59:59'
+                                    - cancelTime: '2023-11-11 23:59:59'
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: '2023-03-12 00:00:00'
+                                    - cancelTime: '2023-11-12 00:00:00'
                                       amount: 4243.09
                                       currency: USD
                                       type: amount
@@ -900,11 +902,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-11 23:59:59'
+                                    - cancelTime: '2023-11-11 23:59:59'
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: '2023-03-12 00:00:00'
+                                    - cancelTime: '2023-11-12 00:00:00'
                                       amount: 4300.35
                                       currency: USD
                                       type: amount
@@ -1000,7 +1002,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 3800.29
                                       currency: USD
                                       type: amount
@@ -1029,7 +1031,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4002.63
                                       currency: USD
                                       type: amount
@@ -1058,7 +1060,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4157.1
                                       currency: USD
                                       type: amount
@@ -1087,7 +1089,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4157.1
                                       currency: USD
                                       type: amount
@@ -1116,7 +1118,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4267.89
                                       currency: USD
                                       type: amount
@@ -1145,7 +1147,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4378.69
                                       currency: USD
                                       type: amount
@@ -1174,7 +1176,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4378.69
                                       currency: USD
                                       type: amount
@@ -1203,7 +1205,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4489.5
                                       currency: USD
                                       type: amount
@@ -1235,7 +1237,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4038.41
                                       currency: USD
                                       type: amount
@@ -1264,7 +1266,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4157.17
                                       currency: USD
                                       type: amount
@@ -1293,7 +1295,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4267.98
                                       currency: USD
                                       type: amount
@@ -1322,7 +1324,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4267.98
                                       currency: USD
                                       type: amount
@@ -1351,7 +1353,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4378.77
                                       currency: USD
                                       type: amount
@@ -1380,7 +1382,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4489.59
                                       currency: USD
                                       type: amount
@@ -1409,7 +1411,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4489.59
                                       currency: USD
                                       type: amount
@@ -1484,11 +1486,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-11 23:59:59'
+                                    - cancelTime: '2023-11-11 23:59:59'
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: '2023-03-12 00:00:00'
+                                    - cancelTime: '2023-11-12 00:00:00'
                                       amount: 4357.6
                                       currency: USD
                                       type: amount
@@ -1568,11 +1570,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-11 23:59:59'
+                                    - cancelTime: '2023-11-11 23:59:59'
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: '2023-03-12 00:00:00'
+                                    - cancelTime: '2023-11-12 00:00:00'
                                       amount: 4586.63
                                       currency: USD
                                       type: amount
@@ -1652,11 +1654,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-11 23:59:59'
+                                    - cancelTime: '2023-11-11 23:59:59'
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: '2023-03-12 00:00:00'
+                                    - cancelTime: '2023-11-12 00:00:00'
                                       amount: 4643.89
                                       currency: USD
                                       type: amount
@@ -1773,11 +1775,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-11 23:59:59'
+                                    - cancelTime: '2023-11-11 23:59:59'
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: '2023-03-12 00:00:00'
+                                    - cancelTime: '2023-11-12 00:00:00'
                                       amount: 4243.09
                                       currency: USD
                                       type: amount
@@ -1842,11 +1844,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-11 23:59:59'
+                                    - cancelTime: '2023-11-11 23:59:59'
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: '2023-03-12 00:00:00'
+                                    - cancelTime: '2023-11-12 00:00:00'
                                       amount: 4300.35
                                       currency: USD
                                       type: amount
@@ -1942,7 +1944,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 3800.29
                                       currency: USD
                                       type: amount
@@ -1971,7 +1973,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4002.63
                                       currency: USD
                                       type: amount
@@ -2000,7 +2002,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4157.1
                                       currency: USD
                                       type: amount
@@ -2029,7 +2031,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4157.1
                                       currency: USD
                                       type: amount
@@ -2058,7 +2060,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4267.89
                                       currency: USD
                                       type: amount
@@ -2087,7 +2089,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4378.69
                                       currency: USD
                                       type: amount
@@ -2116,7 +2118,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4378.69
                                       currency: USD
                                       type: amount
@@ -2145,7 +2147,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4489.5
                                       currency: USD
                                       type: amount
@@ -2177,7 +2179,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4038.41
                                       currency: USD
                                       type: amount
@@ -2206,7 +2208,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4157.17
                                       currency: USD
                                       type: amount
@@ -2235,7 +2237,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4267.98
                                       currency: USD
                                       type: amount
@@ -2264,7 +2266,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4267.98
                                       currency: USD
                                       type: amount
@@ -2293,7 +2295,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4378.77
                                       currency: USD
                                       type: amount
@@ -2322,7 +2324,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4489.59
                                       currency: USD
                                       type: amount
@@ -2351,7 +2353,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: '2023-03-12'
+                                    - cancelTime: '2023-11-12'
                                       amount: 4489.59
                                       currency: USD
                                       type: amount
@@ -3287,8 +3289,8 @@ paths:
                       bookingId: hSq2gVDrf
                       status: CONFIRMED
                       hotelConfirmationCode: hSq2gVDrf
-                      start: '2023-03-15'
-                      end: '2023-03-16'
+                      start: '2023-11-15'
+                      end: '2023-11-16'
                       bookedRooms:
                         - roomType:
                             name: Test rate
@@ -3307,7 +3309,7 @@ paths:
                       createdAt: '2023-01-27T21:38:48.000Z'
                       cancellationPolicies:
                         cancelPolicyInfos:
-                          - cancelTime: '2023-03-15'
+                          - cancelTime: '2023-11-15'
                             amount: 100
                             type: amount
                         hotelRemarks: null
@@ -5281,7 +5283,7 @@ components:
                                   properties:
                                     cancelTime:
                                       type: string
-                                      example: '2023-03-11 23:59:59'
+                                      example: '2023-11-11 23:59:59'
                                     amount:
                                       type: number
                                       example: 0
@@ -5420,11 +5422,11 @@ components:
                       taxesAndFees: null
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-11 23:59:59'
+                        - cancelTime: '2023-11-11 23:59:59'
                           amount: 0
                           currency: USD
                           type: amount
-                        - cancelTime: '2023-03-12 00:00:00'
+                        - cancelTime: '2023-11-12 00:00:00'
                           amount: 4357.6
                           currency: USD
                           type: amount
@@ -5491,11 +5493,11 @@ components:
                       taxesAndFees: null
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-11 23:59:59'
+                        - cancelTime: '2023-11-11 23:59:59'
                           amount: 0
                           currency: USD
                           type: amount
-                        - cancelTime: '2023-03-12 00:00:00'
+                        - cancelTime: '2023-11-12 00:00:00'
                           amount: 4586.63
                           currency: USD
                           type: amount
@@ -5562,11 +5564,11 @@ components:
                       taxesAndFees: null
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-11 23:59:59'
+                        - cancelTime: '2023-11-11 23:59:59'
                           amount: 0
                           currency: USD
                           type: amount
-                        - cancelTime: '2023-03-12 00:00:00'
+                        - cancelTime: '2023-11-12 00:00:00'
                           amount: 4643.89
                           currency: USD
                           type: amount
@@ -5663,11 +5665,11 @@ components:
                       taxesAndFees: null
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-11 23:59:59'
+                        - cancelTime: '2023-11-11 23:59:59'
                           amount: 0
                           currency: USD
                           type: amount
-                        - cancelTime: '2023-03-12 00:00:00'
+                        - cancelTime: '2023-11-12 00:00:00'
                           amount: 4243.09
                           currency: USD
                           type: amount
@@ -5722,11 +5724,11 @@ components:
                       taxesAndFees: null
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-11 23:59:59'
+                        - cancelTime: '2023-11-11 23:59:59'
                           amount: 0
                           currency: USD
                           type: amount
-                        - cancelTime: '2023-03-12 00:00:00'
+                        - cancelTime: '2023-11-12 00:00:00'
                           amount: 4300.35
                           currency: USD
                           type: amount
@@ -5811,7 +5813,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 3800.29
                           currency: USD
                           type: amount
@@ -5839,7 +5841,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 4002.63
                           currency: USD
                           type: amount
@@ -5867,7 +5869,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 4157.1
                           currency: USD
                           type: amount
@@ -5895,7 +5897,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 4157.1
                           currency: USD
                           type: amount
@@ -5923,7 +5925,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 4267.89
                           currency: USD
                           type: amount
@@ -5951,7 +5953,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 4378.69
                           currency: USD
                           type: amount
@@ -5979,7 +5981,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 4378.69
                           currency: USD
                           type: amount
@@ -6007,7 +6009,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 4489.5
                           currency: USD
                           type: amount
@@ -6038,7 +6040,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 4038.41
                           currency: USD
                           type: amount
@@ -6066,7 +6068,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 4157.17
                           currency: USD
                           type: amount
@@ -6094,7 +6096,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 4267.98
                           currency: USD
                           type: amount
@@ -6122,7 +6124,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 4267.98
                           currency: USD
                           type: amount
@@ -6150,7 +6152,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 4378.77
                           currency: USD
                           type: amount
@@ -6178,7 +6180,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 4489.59
                           currency: USD
                           type: amount
@@ -6206,7 +6208,7 @@ components:
                           currency: USD
                     cancellationPolicies:
                       cancelPolicyInfos:
-                        - cancelTime: '2023-03-12'
+                        - cancelTime: '2023-11-12'
                           amount: 4489.59
                           currency: USD
                           type: amount
@@ -6247,326 +6249,6 @@ components:
           code: 204
           message: no availability found
     PrebookResponse:
-      type: object
-      properties:
-        data:
-          type: object
-          properties:
-            prebookId:
-              type: string
-              example: 6oJecKVHR
-            hotelId:
-              type: string
-              example: '49117'
-            currency:
-              type: string
-              example: USD
-            termsAndConditions:
-              type: string
-              example: >-
-                Guests are required to show a photo identification and credit
-                card upon check-in. Please note that all Special Requests are
-                subject to availability and additional charges may apply. In
-                response to Coronavirus (COVID-19), additional safety and
-                sanitation measures are in effect at this property. Due to
-                Coronavirus (COVID-19), this property is taking steps to help
-                protect the safety of guests and staff. Certain services and
-                amenities may be reduced or unavailable as a result. Due to
-                Coronavirus (COVID-19), this property adheres to strict physical
-                distancing measures. Due to Coronavirus (COVID-19), please
-                ensure that you are only booking this property following the
-                local government guidelines of the destination, including but
-                not limited to the purpose of travel, and maximum allowed group
-                size. Due to Coronavirus (COVID-19), wearing a face mask is
-                mandatory in all indoor common areas. "Unauthorized smoking will
-                result in a deep cleaning fee up to $1,500 in a designated
-                non-smoking room. Marijuana products are prohibited in guest
-                rooms and throughout the resort." Early departures after the
-                guests have checked in will be charged for the full rate for the
-                night of the departure as a penalty. A mandatory daily resort
-                fee plus tax will apply. At check in, ask for applicable
-                amenities. Please be advised that the credit card holder must be
-                present at check-in. Any modification of a reservation will
-                result in the original reservation being cancelled and a refund
-                will be issued to the credit card used to secure the booking.
-                The modified reservation will then be charged to the credit card
-                used to secure the booking and will show as a new charge.
-                Property is not responsible for exchange rate differences due to
-                charges and refunds. Guests under the age of 21 can only check
-                in with a parent or official guardian. This property charges
-                $150 per night for incidentals. This charge is fully refundable
-                upon checkout pending approval from the property. Guests are
-                requested to contact the property after booking 10 rooms or
-                more, as such bookings may be subject to different terms and
-                conditions. Extra beds may not be available for all rooms. For
-                all reservations, unless otherwise stated, cancel by 12am 72
-                hours prior to arrival date to avoid a penalty of one night room
-                charge and tax. Please contact the hotel directly with any group
-                related questions. The Buffet accepts all major credit cards as
-                well as debit cards. Cash is not accepted. You may also charge
-                your Buffet experience to your guest room.
-            roomTypes:
-              type: array
-              items:
-                type: object
-                properties:
-                  maxOccupancy:
-                    type: number
-                    example: 5
-                  rates:
-                    type: array
-                    items:
-                      type: object
-                      properties:
-                        rateId:
-                          type: string
-                          example: >-
-                            1_GQ4TCMJXPQZDAMRTFUYDGLJRGV6DEMBSGMWTAMZNGE3HYML4GEZCYOL4KVJXYR2RGRKEGTKKLBDUCWSDI5GVEVSHKE2FGNCNIJIUOQKZIRAU2QSEI5ITIVCDJVFFQR2BLJDDMTKSKFEECNCEIVHUEVCHIU2EMNSNKM3UOSSQKRAUSWSVJBCVSVCDJZNEIS2WJJIXYVKTIR6HI4TBOZSWYZLSGF6HYMRZGMYS4MZVPQZDAMRTFUYDGLJRGIQDAMB2GAYDUMBQPRBEE
-                        name:
-                          type: string
-                          example: Encore Panoramic View King
-                        maxOccupancy:
-                          type: number
-                          example: 0
-                        retailRate:
-                          type: object
-                          properties:
-                            total:
-                              type: array
-                              items:
-                                type: object
-                                properties:
-                                  amount:
-                                    type: number
-                                    example: 2549
-                                  currency:
-                                    type: string
-                                    example: USD
-                            taxesAndFees:
-                              type: string
-                              nullable: true
-                        cancellationPolicies:
-                          type: object
-                          properties:
-                            cancelPolicyInfos:
-                              type: array
-                              items:
-                                type: object
-                                properties:
-                                  cancelTime:
-                                    type: string
-                                    example: '2023-03-11 23:59:59'
-                                  amount:
-                                    type: number
-                                    example: 0
-                                  type:
-                                    type: string
-                                    example: amount
-                            hotelRemarks:
-                              type: array
-                              items:
-                                type: string
-                                example: >-
-                                  Guests are required to show a photo
-                                  identification and credit card upon check-in.
-                                  Please note that all Special Requests are
-                                  subject to availability and additional charges
-                                  may apply. In response to Coronavirus
-                                  (COVID-19), additional safety and sanitation
-                                  measures are in effect at this property. Due
-                                  to Coronavirus (COVID-19), this property is
-                                  taking steps to help protect the safety of
-                                  guests and staff. Certain services and
-                                  amenities may be reduced or unavailable as a
-                                  result. Due to Coronavirus (COVID-19), this
-                                  property adheres to strict physical distancing
-                                  measures. Due to Coronavirus (COVID-19),
-                                  please ensure that you are only booking this
-                                  property following the local government
-                                  guidelines of the destination, including but
-                                  not limited to the purpose of travel, and
-                                  maximum allowed group size. Due to Coronavirus
-                                  (COVID-19), wearing a face mask is mandatory
-                                  in all indoor common areas. "Unauthorized
-                                  smoking will result in a deep cleaning fee up
-                                  to $1,500 in a designated non-smoking room.
-                                  Marijuana products are prohibited in guest
-                                  rooms and throughout the resort." Early
-                                  departures after the guests have checked in
-                                  will be charged for the full rate for the
-                                  night of the departure as a penalty. A
-                                  mandatory daily resort fee plus tax will
-                                  apply. At check in, ask for applicable
-                                  amenities. Please be advised that the credit
-                                  card holder must be present at check-in. Any
-                                  modification of a reservation will result in
-                                  the original reservation being cancelled and a
-                                  refund will be issued to the credit card used
-                                  to secure the booking. The modified
-                                  reservation will then be charged to the credit
-                                  card used to secure the booking and will show
-                                  as a new charge. Property is not responsible
-                                  for exchange rate differences due to charges
-                                  and refunds. Guests under the age of 21 can
-                                  only check in with a parent or official
-                                  guardian. This property charges $150 per night
-                                  for incidentals. This charge is fully
-                                  refundable upon checkout pending approval from
-                                  the property. Guests are requested to contact
-                                  the property after booking 10 rooms or more,
-                                  as such bookings may be subject to different
-                                  terms and conditions. Extra beds may not be
-                                  available for all rooms. For all reservations,
-                                  unless otherwise stated, cancel by 12am 72
-                                  hours prior to arrival date to avoid a penalty
-                                  of one night room charge and tax. Please
-                                  contact the hotel directly with any group
-                                  related questions. The Buffet accepts all
-                                  major credit cards as well as debit cards.
-                                  Cash is not accepted. You may also charge your
-                                  Buffet experience to your guest room.
-                            refundableTag:
-                              type: string
-                              example: RFN
-            price:
-              type: number
-              example: 2549
-            priceDifferencePercent:
-              type: number
-              example: -14
-            cancellationChanged:
-              type: boolean
-              example: true
-            boardChanged:
-              type: boolean
-              example: false
-        guestLevel:
-          type: number
-          example: 0
-        sandbox:
-          type: boolean
-          example: true
-      example:
-        data:
-          prebookId: 6oJecKVHR
-          hotelId: '49117'
-          currency: USD
-          termsAndConditions: >-
-            Guests are required to show a photo identification and credit card
-            upon check-in. Please note that all Special Requests are subject to
-            availability and additional charges may apply. In response to
-            Coronavirus (COVID-19), additional safety and sanitation measures
-            are in effect at this property. Due to Coronavirus (COVID-19), this
-            property is taking steps to help protect the safety of guests and
-            staff. Certain services and amenities may be reduced or unavailable
-            as a result. Due to Coronavirus (COVID-19), this property adheres to
-            strict physical distancing measures. Due to Coronavirus (COVID-19),
-            please ensure that you are only booking this property following the
-            local government guidelines of the destination, including but not
-            limited to the purpose of travel, and maximum allowed group size.
-            Due to Coronavirus (COVID-19), wearing a face mask is mandatory in
-            all indoor common areas. "Unauthorized smoking will result in a deep
-            cleaning fee up to $1,500 in a designated non-smoking room.
-            Marijuana products are prohibited in guest rooms and throughout the
-            resort." Early departures after the guests have checked in will be
-            charged for the full rate for the night of the departure as a
-            penalty. A mandatory daily resort fee plus tax will apply. At check
-            in, ask for applicable amenities. Please be advised that the credit
-            card holder must be present at check-in. Any modification of a
-            reservation will result in the original reservation being cancelled
-            and a refund will be issued to the credit card used to secure the
-            booking. The modified reservation will then be charged to the credit
-            card used to secure the booking and will show as a new charge.
-            Property is not responsible for exchange rate differences due to
-            charges and refunds. Guests under the age of 21 can only check in
-            with a parent or official guardian. This property charges $150 per
-            night for incidentals. This charge is fully refundable upon checkout
-            pending approval from the property. Guests are requested to contact
-            the property after booking 10 rooms or more, as such bookings may be
-            subject to different terms and conditions. Extra beds may not be
-            available for all rooms. For all reservations, unless otherwise
-            stated, cancel by 12am 72 hours prior to arrival date to avoid a
-            penalty of one night room charge and tax. Please contact the hotel
-            directly with any group related questions. The Buffet accepts all
-            major credit cards as well as debit cards. Cash is not accepted. You
-            may also charge your Buffet experience to your guest room.
-          roomTypes:
-            - maxOccupancy: 5
-              rates:
-                - rateId: >-
-                    1_GQ4TCMJXPQZDAMRTFUYDGLJRGV6DEMBSGMWTAMZNGE3HYML4GEZCYOL4KVJXYR2RGRKEGTKKLBDUCWSDI5GVEVSHKE2FGNCNIJIUOQKZIRAU2QSEI5ITIVCDJVFFQR2BLJDDMTKSKFEECNCEIVHUEVCHIU2EMNSNKM3UOSSQKRAUSWSVJBCVSVCDJZNEIS2WJJIXYVKTIR6HI4TBOZSWYZLSGF6HYMRZGMYS4MZVPQZDAMRTFUYDGLJRGIQDAMB2GAYDUMBQPRBEE
-                  name: Encore Panoramic View King
-                  maxOccupancy: 0
-                  retailRate:
-                    total:
-                      - amount: 2549
-                        currency: USD
-                    taxesAndFees: null
-                  cancellationPolicies:
-                    cancelPolicyInfos:
-                      - cancelTime: '2023-03-11 23:59:59'
-                        amount: 0
-                        type: amount
-                      - cancelTime: '2023-03-12 00:00:00'
-                        amount: 2896.08
-                        type: amount
-                    hotelRemarks:
-                      - >-
-                        Guests are required to show a photo identification and
-                        credit card upon check-in. Please note that all Special
-                        Requests are subject to availability and additional
-                        charges may apply. In response to Coronavirus
-                        (COVID-19), additional safety and sanitation measures
-                        are in effect at this property. Due to Coronavirus
-                        (COVID-19), this property is taking steps to help
-                        protect the safety of guests and staff. Certain services
-                        and amenities may be reduced or unavailable as a result.
-                        Due to Coronavirus (COVID-19), this property adheres to
-                        strict physical distancing measures. Due to Coronavirus
-                        (COVID-19), please ensure that you are only booking this
-                        property following the local government guidelines of
-                        the destination, including but not limited to the
-                        purpose of travel, and maximum allowed group size. Due
-                        to Coronavirus (COVID-19), wearing a face mask is
-                        mandatory in all indoor common areas. "Unauthorized
-                        smoking will result in a deep cleaning fee up to $1,500
-                        in a designated non-smoking room. Marijuana products are
-                        prohibited in guest rooms and throughout the resort."
-                        Early departures after the guests have checked in will
-                        be charged for the full rate for the night of the
-                        departure as a penalty. A mandatory daily resort fee
-                        plus tax will apply. At check in, ask for applicable
-                        amenities. Please be advised that the credit card holder
-                        must be present at check-in. Any modification of a
-                        reservation will result in the original reservation
-                        being cancelled and a refund will be issued to the
-                        credit card used to secure the booking. The modified
-                        reservation will then be charged to the credit card used
-                        to secure the booking and will show as a new charge.
-                        Property is not responsible for exchange rate
-                        differences due to charges and refunds. Guests under the
-                        age of 21 can only check in with a parent or official
-                        guardian. This property charges $150 per night for
-                        incidentals. This charge is fully refundable upon
-                        checkout pending approval from the property. Guests are
-                        requested to contact the property after booking 10 rooms
-                        or more, as such bookings may be subject to different
-                        terms and conditions. Extra beds may not be available
-                        for all rooms. For all reservations, unless otherwise
-                        stated, cancel by 12am 72 hours prior to arrival date to
-                        avoid a penalty of one night room charge and tax. Please
-                        contact the hotel directly with any group related
-                        questions. The Buffet accepts all major credit cards as
-                        well as debit cards. Cash is not accepted. You may also
-                        charge your Buffet experience to your guest room.
-                    refundableTag: RFN
-          price: 2549
-          priceDifferencePercent: -14
-          cancellationChanged: true
-          boardChanged: false
-        guestLevel: 0
-        sandbox: true
-    Prebook400Response:
       type: object
       properties:
         data:
@@ -6886,6 +6568,207 @@ components:
             may also charge your Buffet experience to your guest room.
         guestLevel: 0
         sandbox: true
+    Prebook400Response:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            boardChanged:
+              type: boolean
+              example: false
+            cancellationChanged:
+              type: boolean
+              example: true
+            currency:
+              type: string
+              example: USD
+            hotelId:
+              type: string
+              example: '49117'
+            prebookId:
+              type: string
+              example: 6oJecKVHR
+            price:
+              type: number
+              example: 2549
+            priceDifferencePercent:
+              type: number
+              example: -14
+            roomTypes:
+              type: array
+              items:
+                type: object
+                properties:
+                  maxOccupancy:
+                    type: number
+                    example: 5
+                  rates:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        cancellationPolicies:
+                          type: object
+                          properties:
+                            cancelPolicyInfos:
+                              type: array
+                              items:
+                                type: object
+                                properties:
+                                  amount:
+                                    type: number
+                                    example: 0
+                                  cancelTime:
+                                    type: string
+                                    example: '2023-03-11 23:59:59'
+                                  type:
+                                    type: string
+                                    example: amount
+                            hotelRemarks:
+                              type: array
+                              items:
+                                type: string
+                                example: >-
+                                  Guests are required to show a photo
+                                  identification and credit card upon check-in.
+                                  Please note that all Special Requests are
+                                  subject to availability and additional charges
+                                  may apply. In response to Coronavirus
+                                  (COVID-19), additional safety and sanitation
+                                  measures are in effect at this property. Due
+                                  to Coronavirus (COVID-19), this property is
+                                  taking steps to help protect the safety of
+                                  guests and staff. Certain services and
+                                  amenities may be reduced or unavailable as a
+                                  result. Due to Coronavirus (COVID-19), this
+                                  property adheres to strict physical distancing
+                                  measures. Due to Coronavirus (COVID-19),
+                                  please ensure that you are only booking this
+                                  property following the local government
+                                  guidelines of the destination, including but
+                                  not limited to the purpose of travel, and
+                                  maximum allowed group size. Due to Coronavirus
+                                  (COVID-19), wearing a face mask is mandatory
+                                  in all indoor common areas. "Unauthorized
+                                  smoking will result in a deep cleaning fee up
+                                  to $1,500 in a designated non-smoking room.
+                                  Marijuana products are prohibited in guest
+                                  rooms and throughout the resort." Early
+                                  departures after the guests have checked in
+                                  will be charged for the full rate for the
+                                  night of the departure as a penalty. A
+                                  mandatory daily resort fee plus tax will
+                                  apply. At check in, ask for applicable
+                                  amenities. Please be advised that the credit
+                                  card holder must be present at check-in. Any
+                                  modification of a reservation will result in
+                                  the original reservation being cancelled and a
+                                  refund will be issued to the credit card used
+                                  to secure the booking. The modified
+                                  reservation will then be charged to the credit
+                                  card used to secure the booking and will show
+                                  as a new charge. Property is not responsible
+                                  for exchange rate differences due to charges
+                                  and refunds. Guests under the age of 21 can
+                                  only check in with a parent or official
+                                  guardian. This property charges $150 per night
+                                  for incidentals. This charge is fully
+                                  refundable upon checkout pending approval from
+                                  the property. Guests are requested to contact
+                                  the property after booking 10 rooms or more,
+                                  as such bookings may be subject to different
+                                  terms and conditions. Extra beds may not be
+                                  available for all rooms. For all reservations,
+                                  unless otherwise stated, cancel by 12am 72
+                                  hours prior to arrival date to avoid a penalty
+                                  of one night room charge and tax. Please
+                                  contact the hotel directly with any group
+                                  related questions. The Buffet accepts all
+                                  major credit cards as well as debit cards.
+                                  Cash is not accepted. You may also charge your
+                                  Buffet experience to your guest room.
+                            refundableTag:
+                              type: string
+                              example: RFN
+                        maxOccupancy:
+                          type: number
+                          example: 0
+                        name:
+                          type: string
+                          example: Encore Panoramic View King
+                        rateId:
+                          type: string
+                          example: >-
+                            1_GQ4TCMJXPQZDAMRTFUYDGLJRGV6DEMBSGMWTAMZNGE3HYML4GEZCYOL4KVJXYR2RGRKEGTKKLBDUCWSDI5GVEVSHKE2FGNCNIJIUOQKZIRAU2QSEI5ITIVCDJVFFQR2BLJDDMTKSKFEECNCEIVHUEVCHIU2EMNSNKM3UOSSQKRAUSWSVJBCVSVCDJZNEIS2WJJIXYVKTIR6HI4TBOZSWYZLSGF6HYMRZGMYS4MZVPQZDAMRTFUYDGLJRGIQDAMB2GAYDUMBQPRBEE
+                        retailRate:
+                          type: object
+                          properties:
+                            taxesAndFees:
+                              type: string
+                              nullable: true
+                            total:
+                              type: array
+                              items:
+                                type: object
+                                properties:
+                                  amount:
+                                    type: number
+                                    example: 2549
+                                  currency:
+                                    type: string
+                                    example: USD
+            termsAndConditions:
+              type: string
+              example: >-
+                Guests are required to show a photo identification and credit
+                card upon check-in. Please note that all Special Requests are
+                subject to availability and additional charges may apply. In
+                response to Coronavirus (COVID-19), additional safety and
+                sanitation measures are in effect at this property. Due to
+                Coronavirus (COVID-19), this property is taking steps to help
+                protect the safety of guests and staff. Certain services and
+                amenities may be reduced or unavailable as a result. Due to
+                Coronavirus (COVID-19), this property adheres to strict physical
+                distancing measures. Due to Coronavirus (COVID-19), please
+                ensure that you are only booking this property following the
+                local government guidelines of the destination, including but
+                not limited to the purpose of travel, and maximum allowed group
+                size. Due to Coronavirus (COVID-19), wearing a face mask is
+                mandatory in all indoor common areas. "Unauthorized smoking will
+                result in a deep cleaning fee up to $1,500 in a designated
+                non-smoking room. Marijuana products are prohibited in guest
+                rooms and throughout the resort." Early departures after the
+                guests have checked in will be charged for the full rate for the
+                night of the departure as a penalty. A mandatory daily resort
+                fee plus tax will apply. At check in, ask for applicable
+                amenities. Please be advised that the credit card holder must be
+                present at check-in. Any modification of a reservation will
+                result in the original reservation being cancelled and a refund
+                will be issued to the credit card used to secure the booking.
+                The modified reservation will then be charged to the credit card
+                used to secure the booking and will show as a new charge.
+                Property is not responsible for exchange rate differences due to
+                charges and refunds. Guests under the age of 21 can only check
+                in with a parent or official guardian. This property charges
+                $150 per night for incidentals. This charge is fully refundable
+                upon checkout pending approval from the property. Guests are
+                requested to contact the property after booking 10 rooms or
+                more, as such bookings may be subject to different terms and
+                conditions. Extra beds may not be available for all rooms. For
+                all reservations, unless otherwise stated, cancel by 12am 72
+                hours prior to arrival date to avoid a penalty of one night room
+                charge and tax. Please contact the hotel directly with any group
+                related questions. The Buffet accepts all major credit cards as
+                well as debit cards. Cash is not accepted. You may also charge
+                your Buffet experience to your guest room.
+        guestLevel:
+          type: number
+          example: 0
+        sandbox:
+          type: boolean
+          example: true
+      example: *ref_1
     Prebook401Response:
       type: object
       properties:
@@ -7088,250 +6971,6 @@ components:
           example: true
       example: *ref_1
     BookResponse:
-      type: object
-      properties:
-        data:
-          type: object
-          properties:
-            bookingId:
-              type: string
-              example: hSq2gVDrf
-            status:
-              type: string
-              example: CONFIRMED
-            hotelConfirmationCode:
-              type: string
-              example: test
-            start:
-              type: string
-              example: '2023-03-15'
-            checkin:
-              type: string
-              example: '2023-03-15'
-            end:
-              type: string
-              example: '2023-03-16'
-            checkout:
-              type: string
-              example: '2023-03-16'
-            hotel:
-              type: object
-              properties:
-                hotelId:
-                  type: string
-                  example: '436827'
-                name:
-                  type: string
-                  example: Test hotel
-                starRating:
-                  type: number
-                  example: 0
-                address:
-                  type: object
-                  properties:
-                    line1:
-                      type: string
-                      example: ''
-                    line2:
-                      type: string
-                      example: ''
-                    city:
-                      type: string
-                      example: ''
-                    postalCode:
-                      type: string
-                      example: ''
-                    region:
-                      type: string
-                      example: ''
-                    country:
-                      type: string
-                      example: ''
-                    countryName:
-                      type: string
-                      example: ''
-                location:
-                  type: object
-                  properties:
-                    latitude:
-                      type: number
-                      example: 0
-                    longitude:
-                      type: number
-                      example: 0
-            bookedRooms:
-              type: array
-              items:
-                type: object
-                properties:
-                  roomType:
-                    type: object
-                    properties:
-                      roomTypeId:
-                        type: string
-                        example: >-
-                          2_GQZTMOBSG56DEMBSGMWTAMZNGE2XYMRQGIZS2MBTFUYTM7BRPQYTELBZPRKVG7CHGRNFIT2OIJLUORJTI5FU4USVI5MVSVCPJVJFOR2RLJCECTK2KNDUSWKEJVHEEV2NLEZVIS2OKJJUOWSSKRGU4SSTI5ATGVCFJZKEOR22KRCE2WSEGRDUKUSUIVGUEU2HJVMUIR2NJJLFAUK2IRAU2USUI5AVUVCDJZKDITKWLBDDMVSLKRIFES2WI43UGVSLJZBUQWKNJNBEOSSCKRBU2USOJBDDMRCFJVJFSR2OGZDEWTKTK5GEEWSILFGUUV2HGQZEITKPJJJEORJTIRIU6QSSI5BFESCNGNFVIRKNGNCEKT2KKZCU2WSEKFGVETSHLFNEIU2OJQ2EWSSEIU2DOQSTI5AVURCHJVBFIR2FGJEFSTKMGRDUSWSEIFHEUWSFJZFEKNSJGJJUSWSIINDU2USRI5CTIUZSJVBFORSVLFKE67CVKNCHY5DSMF3GK3DFOIYXY7BSGMYS4NRSPQZDAMRTFUYDGLJRGR6EEQQ
-                      name:
-                        type: string
-                        example: Test rate
-                  adults:
-                    type: number
-                    example: 1
-                  children:
-                    type: number
-                    example: 2
-                  rate:
-                    type: object
-                    properties:
-                      rateId:
-                        type: string
-                        example: >-
-                          G4ZTONBWGE3GKNRUGYYTOMRWGQZDAMZSGIYDMNBWMY3TKNRSGZRTMNJSGA3TENTGGZTDMZD4GERTEMBSGMYDGMJVPQZDAMRTGAZTCNT4MVXF6VKTPRKVG7CVKNCHYMKBGJBTCMRNHF6DEMRYGN6FKMSWLBZHYMJWG42DMOJRGE3DQOBRGBRHM3KTEM3DEOJVEMZDQMRNGYZDSNL4KJDE47BSGAZDGMBTGE2HYML4GIZDANJZENJE6I2SIZHCGMRQGE4S2MBWFUYTO
-                      maxOccupancy:
-                        type: number
-                        example: 0
-                      retailRate:
-                        type: object
-                        properties:
-                          total:
-                            type: object
-                            properties:
-                              amount:
-                                type: number
-                                example: 115
-                              currency:
-                                type: string
-                                example: USD
-            guestInfo:
-              type: object
-              properties:
-                guestFirstName:
-                  type: string
-                  example: John
-                guestLastName:
-                  type: string
-                  example: Doe
-                guestEmail:
-                  type: string
-                  example: johndoe@nlite.ml
-            createdAt:
-              type: string
-              example: '2023-01-27T21:38:48Z'
-            cancellation:
-              type: object
-              properties:
-                fee:
-                  type: object
-                  properties:
-                    type:
-                      type: string
-                      example: ''
-                    count:
-                      type: number
-                      example: 0
-                    price:
-                      type: object
-                      properties:
-                        amount:
-                          type: number
-                          example: 0
-                        currency:
-                          type: string
-                          example: ''
-            cancellationPolicies:
-              type: object
-              properties:
-                cancelPolicyInfos:
-                  type: array
-                  items:
-                    type: object
-                    properties:
-                      cancelTime:
-                        type: string
-                        example: '2023-03-15'
-                      amount:
-                        type: number
-                        example: 100
-                      type:
-                        type: string
-                        example: amount
-                hotelRemarks:
-                  type: string
-                  nullable: true
-                refundableTag:
-                  type: string
-                  example: RFN
-            price:
-              type: number
-              example: 115
-        guestLevel:
-          type: number
-          example: 0
-        sandbox:
-          type: boolean
-          example: true
-      example:
-        data:
-          bookingId: hSq2gVDrf
-          status: CONFIRMED
-          hotelConfirmationCode: test
-          start: '2023-03-15'
-          checkin: '2023-03-15'
-          end: '2023-03-16'
-          checkout: '2023-03-16'
-          hotel:
-            hotelId: '436827'
-            name: Test hotel
-            starRating: 0
-            address:
-              line1: ''
-              line2: ''
-              city: ''
-              postalCode: ''
-              region: ''
-              country: ''
-              countryName: ''
-            location:
-              latitude: 0
-              longitude: 0
-          bookedRooms:
-            - roomType:
-                roomTypeId: >-
-                  2_GQZTMOBSG56DEMBSGMWTAMZNGE2XYMRQGIZS2MBTFUYTM7BRPQYTELBZPRKVG7CHGRNFIT2OIJLUORJTI5FU4USVI5MVSVCPJVJFOR2RLJCECTK2KNDUSWKEJVHEEV2NLEZVIS2OKJJUOWSSKRGU4SSTI5ATGVCFJZKEOR22KRCE2WSEGRDUKUSUIVGUEU2HJVMUIR2NJJLFAUK2IRAU2USUI5AVUVCDJZKDITKWLBDDMVSLKRIFES2WI43UGVSLJZBUQWKNJNBEOSSCKRBU2USOJBDDMRCFJVJFSR2OGZDEWTKTK5GEEWSILFGUUV2HGQZEITKPJJJEORJTIRIU6QSSI5BFESCNGNFVIRKNGNCEKT2KKZCU2WSEKFGVETSHLFNEIU2OJQ2EWSSEIU2DOQSTI5AVURCHJVBFIR2FGJEFSTKMGRDUSWSEIFHEUWSFJZFEKNSJGJJUSWSIINDU2USRI5CTIUZSJVBFORSVLFKE67CVKNCHY5DSMF3GK3DFOIYXY7BSGMYS4NRSPQZDAMRTFUYDGLJRGR6EEQQ
-                name: Test rate
-              adults: 1
-              children: 2
-              rate:
-                rateId: >-
-                  G4ZTONBWGE3GKNRUGYYTOMRWGQZDAMZSGIYDMNBWMY3TKNRSGZRTMNJSGA3TENTGGZTDMZD4GERTEMBSGMYDGMJVPQZDAMRTGAZTCNT4MVXF6VKTPRKVG7CVKNCHYMKBGJBTCMRNHF6DEMRYGN6FKMSWLBZHYMJWG42DMOJRGE3DQOBRGBRHM3KTEM3DEOJVEMZDQMRNGYZDSNL4KJDE47BSGAZDGMBTGE2HYML4GIZDANJZENJE6I2SIZHCGMRQGE4S2MBWFUYTO
-                maxOccupancy: 0
-                retailRate:
-                  total:
-                    amount: 115
-                    currency: USD
-          guestInfo:
-            guestFirstName: John
-            guestLastName: Doe
-            guestEmail: johndoe@nlite.ml
-          createdAt: '2023-01-27T21:38:48Z'
-          cancellation:
-            fee:
-              type: ''
-              count: 0
-              price:
-                amount: 0
-                currency: ''
-          cancellationPolicies:
-            cancelPolicyInfos:
-              - cancelTime: '2023-03-15'
-                amount: 100
-                type: amount
-            hotelRemarks: null
-            refundableTag: RFN
-          price: 115
-        guestLevel: 0
-        sandbox: true
-    Book400Response:
       type: object
       properties:
         data:
@@ -7575,6 +7214,190 @@ components:
           status: CONFIRMED
         guestLevel: 0
         sandbox: true
+    Book400Response:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            bookedRooms:
+              type: array
+              items:
+                type: object
+                properties:
+                  adults:
+                    type: number
+                    example: 1
+                  children:
+                    type: number
+                    example: 2
+                  rate:
+                    type: object
+                    properties:
+                      maxOccupancy:
+                        type: number
+                        example: 0
+                      rateId:
+                        type: string
+                        example: >-
+                          G4ZTONBWGE3GKNRUGYYTOMRWGQZDAMZSGIYDMNBWMY3TKNRSGZRTMNJSGA3TENTGGZTDMZD4GERTEMBSGMYDGMJVPQZDAMRTGAZTCNT4MVXF6VKTPRKVG7CVKNCHYMKBGJBTCMRNHF6DEMRYGN6FKMSWLBZHYMJWG42DMOJRGE3DQOBRGBRHM3KTEM3DEOJVEMZDQMRNGYZDSNL4KJDE47BSGAZDGMBTGE2HYML4GIZDANJZENJE6I2SIZHCGMRQGE4S2MBWFUYTO
+                      retailRate:
+                        type: object
+                        properties:
+                          total:
+                            type: object
+                            properties:
+                              amount:
+                                type: number
+                                example: 115
+                              currency:
+                                type: string
+                                example: USD
+                  roomType:
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                        example: Test rate
+                      roomTypeId:
+                        type: string
+                        example: >-
+                          2_GQZTMOBSG56DEMBSGMWTAMZNGE2XYMRQGIZS2MBTFUYTM7BRPQYTELBZPRKVG7CHGRNFIT2OIJLUORJTI5FU4USVI5MVSVCPJVJFOR2RLJCECTK2KNDUSWKEJVHEEV2NLEZVIS2OKJJUOWSSKRGU4SSTI5ATGVCFJZKEOR22KRCE2WSEGRDUKUSUIVGUEU2HJVMUIR2NJJLFAUK2IRAU2USUI5AVUVCDJZKDITKWLBDDMVSLKRIFES2WI43UGVSLJZBUQWKNJNBEOSSCKRBU2USOJBDDMRCFJVJFSR2OGZDEWTKTK5GEEWSILFGUUV2HGQZEITKPJJJEORJTIRIU6QSSI5BFESCNGNFVIRKNGNCEKT2KKZCU2WSEKFGVETSHLFNEIU2OJQ2EWSSEIU2DOQSTI5AVURCHJVBFIR2FGJEFSTKMGRDUSWSEIFHEUWSFJZFEKNSJGJJUSWSIINDU2USRI5CTIUZSJVBFORSVLFKE67CVKNCHY5DSMF3GK3DFOIYXY7BSGMYS4NRSPQZDAMRTFUYDGLJRGR6EEQQ
+            bookingId:
+              type: string
+              example: hSq2gVDrf
+            cancellation:
+              type: object
+              properties:
+                fee:
+                  type: object
+                  properties:
+                    count:
+                      type: number
+                      example: 0
+                    price:
+                      type: object
+                      properties:
+                        amount:
+                          type: number
+                          example: 0
+                        currency:
+                          type: string
+                          example: ''
+                    type:
+                      type: string
+                      example: ''
+            cancellationPolicies:
+              type: object
+              properties:
+                cancelPolicyInfos:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      amount:
+                        type: number
+                        example: 100
+                      cancelTime:
+                        type: string
+                        example: '2023-03-15'
+                      type:
+                        type: string
+                        example: amount
+                hotelRemarks:
+                  type: string
+                  nullable: true
+                refundableTag:
+                  type: string
+                  example: RFN
+            checkin:
+              type: string
+              example: '2023-03-15'
+            checkout:
+              type: string
+              example: '2023-03-16'
+            createdAt:
+              type: string
+              example: '2023-01-27T21:38:48Z'
+            end:
+              type: string
+              example: '2023-03-16'
+            guestInfo:
+              type: object
+              properties:
+                guestEmail:
+                  type: string
+                  example: johndoe@nlite.ml
+                guestFirstName:
+                  type: string
+                  example: John
+                guestLastName:
+                  type: string
+                  example: Doe
+            hotel:
+              type: object
+              properties:
+                address:
+                  type: object
+                  properties:
+                    city:
+                      type: string
+                      example: ''
+                    country:
+                      type: string
+                      example: ''
+                    countryName:
+                      type: string
+                      example: ''
+                    line1:
+                      type: string
+                      example: ''
+                    line2:
+                      type: string
+                      example: ''
+                    postalCode:
+                      type: string
+                      example: ''
+                    region:
+                      type: string
+                      example: ''
+                hotelId:
+                  type: string
+                  example: '436827'
+                location:
+                  type: object
+                  properties:
+                    latitude:
+                      type: number
+                      example: 0
+                    longitude:
+                      type: number
+                      example: 0
+                name:
+                  type: string
+                  example: Test hotel
+                starRating:
+                  type: number
+                  example: 0
+            hotelConfirmationCode:
+              type: string
+              example: test
+            price:
+              type: number
+              example: 115
+            start:
+              type: string
+              example: '2023-03-15'
+            status:
+              type: string
+              example: CONFIRMED
+        guestLevel:
+          type: number
+          example: 0
+        sandbox:
+          type: boolean
+          example: true
+      example: *ref_2
     Book401Response:
       type: object
       properties:
@@ -7826,10 +7649,10 @@ components:
               example: hSq2gVDrf
             start:
               type: string
-              example: '2023-03-15'
+              example: '2023-11-15'
             end:
               type: string
-              example: '2023-03-16'
+              example: '2023-11-16'
             bookedRooms:
               type: array
               items:
@@ -7891,7 +7714,7 @@ components:
                         properties:
                           cancelTime:
                             type: string
-                            example: '2023-03-15'
+                            example: '2023-11-15'
                           amount:
                             type: number
                             example: 100
@@ -7923,8 +7746,8 @@ components:
           bookingId: hSq2gVDrf
           status: CONFIRMED
           hotelConfirmationCode: hSq2gVDrf
-          start: '2023-03-15'
-          end: '2023-03-16'
+          start: '2023-11-15'
+          end: '2023-11-16'
           bookedRooms:
             - roomType:
                 name: Test rate
@@ -7943,7 +7766,7 @@ components:
           createdAt: '2023-01-27T21:38:48.000Z'
           cancellationPolicies:
             cancelPolicyInfos:
-              - cancelTime: '2023-03-15'
+              - cancelTime: '2023-11-15'
                 amount: 100
                 type: amount
             hotelRemarks: null
