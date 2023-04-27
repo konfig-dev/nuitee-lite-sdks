@@ -29,7 +29,7 @@ generators:
       userId: konfig-dev
       repoId: nuitee-lite-sdks/tree/main/swift
   php:
-    version: 1.7.0
+    version: 1.8.0
     packageName: nuitee-lite-php-sdk
     invokerPackage: Nuitee
     outputDirectory: php
