@@ -55,21 +55,21 @@ paths:
             type: string
           description: List of hotelIds
           required: true
-          example: 49117,49123
+          example: 1000091,1000876,1001325,1001464,99249,99122,99121,99119,580014,1032513
         - name: checkin
           in: query
           schema:
             type: string
           description: Check in data in YYYY-MM-DD format
           required: true
-          example: "2023-03-15"
+          example: "2023-11-15"
         - name: checkout
           in: query
           schema:
             type: string
           description: Check out data in YYYY-MM-DD format
           required: true
-          example: "2023-03-16"
+          example: "2023-11-16"
         - name: currency
           in: query
           schema:
@@ -337,21 +337,21 @@ paths:
             type: string
           description: List of hotelIds
           required: true
-          example: 49117,49123
+          example: 1000091,1000876,1001325,1001464,99249,99122,99121,99119,580014,1032513
         - name: checkin
           in: query
           schema:
             type: string
           description: Check in data in YYYY-MM-DD format
           required: true
-          example: "2023-03-15"
+          example: "2023-11-15"
         - name: checkout
           in: query
           schema:
             type: string
           description: Check out data in YYYY-MM-DD format
           required: true
-          example: "2023-03-16"
+          example: "2023-11-16"
         - name: guestNationality
           in: query
           schema:
@@ -470,11 +470,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-11 23:59:59"
+                                    - cancelTime: "2023-11-11 23:59:59"
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: "2023-03-12 00:00:00"
+                                    - cancelTime: "2023-11-12 00:00:00"
                                       amount: 4357.6
                                       currency: USD
                                       type: amount
@@ -494,11 +494,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-11 23:59:59"
+                                    - cancelTime: "2023-11-11 23:59:59"
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: "2023-03-12 00:00:00"
+                                    - cancelTime: "2023-11-12 00:00:00"
                                       amount: 4586.63
                                       currency: USD
                                       type: amount
@@ -518,11 +518,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-11 23:59:59"
+                                    - cancelTime: "2023-11-11 23:59:59"
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: "2023-03-12 00:00:00"
+                                    - cancelTime: "2023-11-12 00:00:00"
                                       amount: 4643.89
                                       currency: USD
                                       type: amount
@@ -545,11 +545,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-11 23:59:59"
+                                    - cancelTime: "2023-11-11 23:59:59"
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: "2023-03-12 00:00:00"
+                                    - cancelTime: "2023-11-12 00:00:00"
                                       amount: 4243.09
                                       currency: USD
                                       type: amount
@@ -569,11 +569,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-11 23:59:59"
+                                    - cancelTime: "2023-11-11 23:59:59"
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: "2023-03-12 00:00:00"
+                                    - cancelTime: "2023-11-12 00:00:00"
                                       amount: 4300.35
                                       currency: USD
                                       type: amount
@@ -622,7 +622,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 3800.29
                                       currency: USD
                                       type: amount
@@ -649,7 +649,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4002.63
                                       currency: USD
                                       type: amount
@@ -676,7 +676,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4157.1
                                       currency: USD
                                       type: amount
@@ -703,7 +703,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4157.1
                                       currency: USD
                                       type: amount
@@ -730,7 +730,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4267.89
                                       currency: USD
                                       type: amount
@@ -757,7 +757,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4378.69
                                       currency: USD
                                       type: amount
@@ -784,7 +784,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4378.69
                                       currency: USD
                                       type: amount
@@ -811,7 +811,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4489.5
                                       currency: USD
                                       type: amount
@@ -841,7 +841,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4038.41
                                       currency: USD
                                       type: amount
@@ -868,7 +868,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4157.17
                                       currency: USD
                                       type: amount
@@ -895,7 +895,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4267.98
                                       currency: USD
                                       type: amount
@@ -922,7 +922,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4267.98
                                       currency: USD
                                       type: amount
@@ -949,7 +949,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4378.77
                                       currency: USD
                                       type: amount
@@ -976,7 +976,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4489.59
                                       currency: USD
                                       type: amount
@@ -1003,7 +1003,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4489.59
                                       currency: USD
                                       type: amount
@@ -1031,11 +1031,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-11 23:59:59"
+                                    - cancelTime: "2023-11-11 23:59:59"
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: "2023-03-12 00:00:00"
+                                    - cancelTime: "2023-11-12 00:00:00"
                                       amount: 4357.6
                                       currency: USD
                                       type: amount
@@ -1055,11 +1055,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-11 23:59:59"
+                                    - cancelTime: "2023-11-11 23:59:59"
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: "2023-03-12 00:00:00"
+                                    - cancelTime: "2023-11-12 00:00:00"
                                       amount: 4586.63
                                       currency: USD
                                       type: amount
@@ -1079,11 +1079,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-11 23:59:59"
+                                    - cancelTime: "2023-11-11 23:59:59"
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: "2023-03-12 00:00:00"
+                                    - cancelTime: "2023-11-12 00:00:00"
                                       amount: 4643.89
                                       currency: USD
                                       type: amount
@@ -1106,11 +1106,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-11 23:59:59"
+                                    - cancelTime: "2023-11-11 23:59:59"
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: "2023-03-12 00:00:00"
+                                    - cancelTime: "2023-11-12 00:00:00"
                                       amount: 4243.09
                                       currency: USD
                                       type: amount
@@ -1130,11 +1130,11 @@ paths:
                                   taxesAndFees: null
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-11 23:59:59"
+                                    - cancelTime: "2023-11-11 23:59:59"
                                       amount: 0
                                       currency: USD
                                       type: amount
-                                    - cancelTime: "2023-03-12 00:00:00"
+                                    - cancelTime: "2023-11-12 00:00:00"
                                       amount: 4300.35
                                       currency: USD
                                       type: amount
@@ -1183,7 +1183,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 3800.29
                                       currency: USD
                                       type: amount
@@ -1210,7 +1210,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4002.63
                                       currency: USD
                                       type: amount
@@ -1237,7 +1237,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4157.1
                                       currency: USD
                                       type: amount
@@ -1264,7 +1264,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4157.1
                                       currency: USD
                                       type: amount
@@ -1291,7 +1291,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4267.89
                                       currency: USD
                                       type: amount
@@ -1318,7 +1318,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4378.69
                                       currency: USD
                                       type: amount
@@ -1345,7 +1345,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4378.69
                                       currency: USD
                                       type: amount
@@ -1372,7 +1372,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4489.5
                                       currency: USD
                                       type: amount
@@ -1402,7 +1402,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4038.41
                                       currency: USD
                                       type: amount
@@ -1429,7 +1429,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4157.17
                                       currency: USD
                                       type: amount
@@ -1456,7 +1456,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4267.98
                                       currency: USD
                                       type: amount
@@ -1483,7 +1483,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4267.98
                                       currency: USD
                                       type: amount
@@ -1510,7 +1510,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4378.77
                                       currency: USD
                                       type: amount
@@ -1537,7 +1537,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4489.59
                                       currency: USD
                                       type: amount
@@ -1564,7 +1564,7 @@ paths:
                                       currency: USD
                                 cancellationPolicies:
                                   cancelPolicyInfos:
-                                    - cancelTime: "2023-03-12"
+                                    - cancelTime: "2023-11-12"
                                       amount: 4489.59
                                       currency: USD
                                       type: amount
@@ -1812,10 +1812,10 @@ paths:
                             taxesAndFees: null
                           cancellationPolicies:
                             cancelPolicyInfos:
-                              - cancelTime: "2023-03-11 23:59:59"
+                              - cancelTime: "2023-11-11 23:59:59"
                                 amount: 0
                                 type: amount
-                              - cancelTime: "2023-03-12 00:00:00"
+                              - cancelTime: "2023-11-12 00:00:00"
                                 amount: 2896.08
                                 type: amount
                             hotelRemarks:
@@ -2120,10 +2120,10 @@ paths:
                   bookingId: hSq2gVDrf
                   status: CONFIRMED
                   hotelConfirmationCode: test
-                  start: "2023-03-15"
-                  checkin: "2023-03-15"
-                  end: "2023-03-16"
-                  checkout: "2023-03-16"
+                  start: "2023-11-15"
+                  checkin: "2023-11-15"
+                  end: "2023-11-16"
+                  checkout: "2023-11-16"
                   hotel:
                     hotelId: "436827"
                     name: Test hotel
@@ -2166,7 +2166,7 @@ paths:
                         currency: ""
                   cancellationPolicies:
                     cancelPolicyInfos:
-                      - cancelTime: "2023-03-15"
+                      - cancelTime: "2023-11-15"
                         amount: 100
                         type: amount
                     hotelRemarks: null
@@ -2642,8 +2642,8 @@ paths:
                       bookingId: hSq2gVDrf
                       status: CONFIRMED
                       hotelConfirmationCode: hSq2gVDrf
-                      start: "2023-03-15"
-                      end: "2023-03-16"
+                      start: "2023-11-15"
+                      end: "2023-11-16"
                       bookedRooms:
                         - roomType:
                             name: Test rate
@@ -2662,7 +2662,7 @@ paths:
                       createdAt: 2023-01-27T21:38:48
                       cancellationPolicies:
                         cancelPolicyInfos:
-                          - cancelTime: "2023-03-15"
+                          - cancelTime: "2023-11-15"
                             amount: 100
                             type: amount
                         hotelRemarks: null
