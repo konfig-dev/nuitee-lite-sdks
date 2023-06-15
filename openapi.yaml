@@ -2030,6 +2030,7 @@ paths:
                     - method
               required:
                 - prebookId
+                - guestInfo
             examples:
               Example 1:
                 value:
